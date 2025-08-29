@@ -1,36 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>My Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <title>mgr inż. M.B. Profile page</title>
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <link rel="stylesheet" href="Styles/timeline.css" />
+    <link rel="stylesheet" href="Styles/categorised.css" />
+    <link rel="stylesheet" href="Styles/sidebar.css" />
   </head>
 
   <body>
-    <aside class="sidebarMain">
-        <ul>
-            <li>Education</li>
-            <li>Work expierience</li>
-            <li>Other stuff</li>
-        </ul>
+    <aside class="sidebar">
+      <button class="sidebar__toggle" aria-expanded="false" aria-controls="sidebar-content" title="Open menu">☰</button>
+
+        <div id="sidebar-content" class="sidebar__content">
+          <ul class="sidebar__list">
+            <li>
+              <a href="https://www.youtube.com/@LisuAvangard" target="_blank" rel="noopener">
+                <img src="Assets/youtube_logo.png" alt="YouTube" class="icon" />
+                YouTube
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/HyenaPirate" target="_blank" rel="noopener">
+                <img src="Assets/github_logo.png" alt="GitHub" class="icon" />
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://www.deviantart.com/lisuavangard" target="_blank" rel="noopener">
+                <img src="Assets/deviantart_logo.png" alt="DeviantArt" class="icon" />
+                DeviantArt
+              </a>
+            </li>
+          </ul>
+        </div>
     </aside>
 
-    <main class="mainBoard">
-        <section class="profileSection">
-            <img src="Assets/cv_photo_main.png" alt="Main photo" class="profilePhoto">
+    <div class="sidebar__scrim" hidden></div>
 
-            <div>
-                <h2 class="profileName">mgr inż. Mateusz Banaszkiewicz</h2>
-                <p class="profileDescription">
-                    This is a description. I will add actual info later, for now this is a placeholder so I can see how to stylize this.
+    <main class="main">
+      <section class="profile">
+        <img src="Assets/cv_photo_main.png" alt="Main photo" class="profile__photo" />
+        <div class="profile__info">
+          <h2 class="profile__name">mgr inż. Mateusz Banaszkiewicz</h2>
+          <p class="profile__desc">
+            Your new favourite employee.
+          </p>
+        </div>
+      </section>
+
+      <h1>Hello World!</h1>
+      <p>This website is currently under construction. I take my time learning HTML, CSS and JS to perfect my skills, and become the best employee you will ever have.</p>
+
+      <!-- Tabs: Different categories like skill set, education and work info, selectable -->
+      <section class="tabs">
+        <div class="tabs__list" role="tablist" aria-label="Profile sections">
+          <button class="tab is-active" role="tab" aria-selected="true" aria-controls="panel-about" id="tab-about" data-target="about">About</button>
+
+          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-education" id="tab-education" data-target="education">Education</button>
+
+          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-work" id="tab-work" data-target="work">Work Experience</button>
+
+          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-skills" id="tab-skills" data-target="skills">Skills</button>
+
+          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-interests" id="tab-interests" data-target="interests">Interests</button>
+        </div>
+
+        <div class="tabs__panels">
+          <section id="panel-about" class="tab-panel" role="tabpanel" aria-labelledby="tab-about">
+            <p>wip</p>
+          </section>
+
+
+
+          <section id="panel-education" class="tab-panel" role="tabpanel" aria-labelledby="tab-education">            
+
+            <div class="tl" data-default-order="desc">
+              <div class="tl__sortbar">
+                <button class="tl__sortbtn is-active" data-order="desc" aria-pressed="true">Newest → Oldest</button>
+                <button class="tl__sortbtn" data-order="asc" aria-pressed="false">Oldest → Newest</button>
+              </div>
+
+              <div class="tl__items">
+                <article class="tl__item" data-start="2024-02" data-end="2025-07">
+                  <h3 class="tl__title">University of Zielona Góra</h3>
+                  <p class="tl__meta"><time class="tl__start"></time> – <time class="tl__end"></time> • Zielona Góra, PL</p>
+                  <p class="tl__brief">Master’s in Computer Science (Inżynieria Systemów Informatycznych).</p>
+                  <details class="tl__details"><summary class="tl__summary">Details</summary>
+                    <ul class="tl__points">
+                      <li>Thesis: Universal Smart Home Controller (Zigbee, Home Assistant).</li>
+                      <li>Focus: embedded systems, networks, security.</li>
+                    </ul>
+                  </details>
+                </article>
+
+                <article class="tl__item" data-start="2020-10" data-end="2024-02">
+                  <h3 class="tl__title">University of Zielona Góra</h3>
+                  <p class="tl__meta"><time class="tl__start"></time> – <time class="tl__end"></time> • Zielona Góra, PL</p>
+                  <p class="tl__brief">Engineer in Computer Science (Inżynieria systemów mikroinformatycznych).</p>
+                  <details class="tl__details"><summary class="tl__summary">Details</summary>
+                    <ul class="tl__points">
+                      <li>Thesis: Custom Smart Home Instalation.</li>
+                      <li>Focus: embedded systems, networks, security.</li>
+                    </ul>
+                  </details>
+                </article>              
+
+              <article class="tl__item" data-start="2016-09" data-end="2019-06">
+                <h3 class="tl__title">IV Liceum Ogólnokształcące w Zielonej Górze “Lotnik”</h3>
+                <p class="tl__meta">
+                  <time class="tl__start"></time> – <time class="tl__end"></time> • Zielona Góra, PL
                 </p>
+                <p class="tl__brief">Technical profile (mechanics/electronics).</p>                
+              </article>
+
+              <article class="tl__item" data-start="2013-09" data-end="2016-06">
+                <h3 class="tl__title">Gimnazjum nr. 2 w Zielonej Górze”</h3>
+                <p class="tl__meta">
+                  <time class="tl__start"></time> – <time class="tl__end"></time> • Zielona Góra,PL
+                </p>
+                <p class="tl__brief">Technical profile (mechanics/electronics).</p>                
+              </article>
+
+            </div>
+          </section>
+
+          <section id="panel-work" class="tab-panel" role="tabpanel" aria-labelledby="tab-work">            
+
+            <div class="tl" data-default-order="desc">
+              <div class="tl__sortbar">
+                <button class="tl__sortbtn is-active" data-order="desc" aria-pressed="true">Newest → Oldest</button>
+                <button class="tl__sortbtn" data-order="asc" aria-pressed="false">Oldest → Newest</button>
+              </div>
+
+              <div class="tl__items">
+                <article class="tl__item" data-start="2024-01" data-end="2025-08">
+                  <h3 class="tl__title">Self-employement</h3>
+                  <p class="tl__meta"><time class="tl__start"></time> – <time class="tl__end"></time> • Zielona Góra, PL</p>
+                  <p class="tl__brief">Running an online shop selling animal bones and pelts.</p> 
+                  <details class="tl__details"><summary class="tl__summary">Details</summary>
+                    <p>Bucks For Bucks Mateusz Banaszkiewicz</p>
+                    <p>NIP: 9731098722</p>
+                    <ul class="tl__points">
+                      <li>Customer support.</li>
+                      <li>Advertisement.</li>
+                      <li>Bookkeeping.</li>
+                      <li>Accounting.</li>
+                      <li>Inventory management and documentation.</li>
+                      <li>Logistics of international shipping.</li>
+                      <li>Proper and efficient packaging.</li>
+                    </ul>
+                  </details>                 
+                </article>
+
+                <article class="tl__item" data-start="2022-08" data-end="2022-09">
+                  <h3 class="tl__title">Internship</h3>
+                  <p class="tl__meta"><time class="tl__start"></time> – <time class="tl__end"></time> • Zielona Góra, PL</p>
+                  <p class="tl__brief">Helper in a Computer shop.</p>
+                  <details class="tl__details"><summary class="tl__summary">Details</summary>
+                    <p>Worked at Computer Partner Waldemar Łobaczewski</p>
+                    <p>Bohaterów Westerplatte 11/1A/2, 65-001 Zielona Góra</p>
+                    <ul class="tl__points">
+                      <li>Quality  control of imported equipment.</li>                      
+                      <li>Managing entries in the database.</li>                      
+                      <li>Documentation of warehouse stock.</li>                      
+                      <li>Preparation of orders for shipment.</li>    
+                    </ul>
+                  </details>
+                </article>
+              
+              </div>
+          </section>
+
+          
+
+          <section id="panel-skills" class="tab-panel" role="tabpanel" aria-labelledby="tab-skills">
+
+            <div class="categorised-search">
+              <input type="search" class="categorised-search__input" placeholder="Search skills…" aria-label="Search skills">
             </div>
 
-        </section>
-        <h1>Hello World!</h1>
-        <p>This is the main space.</p>
+            <div class="categorised">
+
+              <!-- Category -->
+              <section class="categorised__category" aria-labelledby="cat-prog">
+                <h3 id="cat-prog" class="categorised__heading">Coding Languages</h3>
+                <ul class="categorised__list">
+                  <li class="categorised__item" >C / C++ / C#</li>
+                  <li class="categorised__item" >Python</li>
+                  <li class="categorised__item" >Java</li>
+                  <li class="categorised__item" >JavaScript</li>
+                </ul>
+              </section>
+
+              <!-- Category -->
+              <section class="categorised__category" aria-labelledby="cat-ide">
+                <h3 id="cat-ide" class="categorised__heading">Programming Enviroments</h3>
+                <ul class="categorised__list">
+                  <li class="categorised__item" >Visual Studio Code</li>
+                  <li class="categorised__item" >Intellij IDEA</li>
+                  <li class="categorised__item" >ESP-IDF</li>
+                  <li class="categorised__item" >Arduino IDE</li>
+                  <li class="categorised__item" >Unreal Engine</li>
+                  <li class="categorised__item" >Unity</li>
+                </ul>
+              </section>
+
+              <!-- Category -->
+              <section class="categorised__category" aria-labelledby="cat-tools">
+                <h3 id="cat-tools" class="categorised__heading">Other Enviroments</h3>
+                <ul class="categorised__list">
+                  <li class="categorised__item" >GitHub</li>
+                  <li class="categorised__item" >Notion</li>
+                  <li class="categorised__item" >Trello</li>
+                  <li class="categorised__item" >Microsoft Office - Excel, Word, PowerPoint</li>
+                  <li class="categorised__item" >AI tools - ChatGPT</li>
+                </ul>
+              </section>
+
+              <!-- Category -->
+              <section class="categorised__category" aria-labelledby="cat-phys">
+                <h3 id="cat-phys" class="categorised__heading">Physical</h3>
+                <ul class="categorised__list">
+                  <li class="categorised__item" >60kg benchpress</li>
+                  <li class="categorised__item" >190cm tall</li>
+                  <li class="categorised__item" >Cat. B driver's licence with 7-year experience</li>
+                  <li class="categorised__item" >Great manual skills</li>
+                </ul>
+              </section>
+
+              <section class="categorised__category" aria-labelledby="cat-social">
+                <h3 id="cat-social" class="categorised__heading">Social</h3>
+                <ul class="categorised__list">
+                  <li class="categorised__item" >Great teamwork</li>
+                  <li class="categorised__item" >Quick adapting to new surroundings</li>
+                  <li class="categorised__item" >Well performing under pressure and time constraints</li>
+                  <li class="categorised__item" >Avaible for elastic work hours</li>
+                  <li class="categorised__item" >Advanced english, frequently tested with native speakers</li>
+                </ul>
+              </section>
+
+            </div>
+          </section>
+          
+
+          <section id="panel-interests" class="tab-panel" role="tabpanel" aria-labelledby="tab-interests">
+
+            <div class="categorised-search">
+              <input type="search" class="categorised-search__input" placeholder="Search entries…" aria-label="Search entries">
+            </div>
+
+            <div class="categorised">
+
+              <section class="categorised__category" aria-labelledby="cat-computer-science">
+                <h3 id="cat-computer-science" class="categorised__heading">Computer Science</h3>
+                <ul class="categorised__list">
+                  <li class="categorised__item">Electronics</li>
+                  <li class="categorised__item">Programming</li>
+                  <li class="categorised__item">Problem solving</li>
+                  <li class="categorised__item">Robotics</li>
+                </ul>
+              </section>
+
+              <section class="categorised__category" aria-labelledby="cat-creativity">
+                <h3 id="cat-creativity" class="categorised__heading">Creativity</h3>
+                <ul class="categorised__list">
+                  <li class="categorised__item">Game development</li>
+                  <li class="categorised__item">3D modeling and printing</li>
+                  <li class="categorised__item">Drawing</li>
+                  <li class="categorised__item">Animation</li>
+                  <li class="categorised__item">Content creation</li>
+                </ul>
+              </section>
+
+              <section class="categorised__category" aria-labelledby="cat-gaming">
+                <h3 id="cat-gaming" class="categorised__heading">Gaming</h3>
+                <ul class="categorised__list">
+                  <li class="categorised__item">Racing games</li>
+                  <li class="categorised__item">Counter Strike 2</li>
+                  <li class="categorised__item">Minecraft</li>
+                  <li class="categorised__item">Hunting simulators</li>
+                  <li class="categorised__item">RPGs</li>
+                  <li class="categorised__item">3 Witcher III the best</li>
+                  <li class="categorised__item">Five Nights At Freddy's series</li>
+                </ul>
+              </section>
+
+              <section class="categorised__category" aria-labelledby="cat-manual">
+                <h3 id="cat-manual" class="categorised__heading">Manual</h3>
+                <ul class="categorised__list">
+                  <li class="categorised__item">Cooking</li>
+                  <li class="categorised__item">Mechanics</li>
+                  <li class="categorised__item">Car driving</li>
+                  <li class="categorised__item">Tinkering</li>
+                  <li class="categorised__item">Cleaning windows</li>
+                </ul>
+              </section>
+
+              <section class="categorised__category" aria-labelledby="cat-relax">
+                <h3 id="cat-relax" class="categorised__heading">Relax</h3>
+                <ul class="categorised__list">
+                  <li class="categorised__item">YouTube</li>
+                  <li class="categorised__item">Animated movies</li>
+                  <li class="categorised__item">War movies</li>
+                  <li class="categorised__item">Gaming</li>
+                  <li class="categorised__item">Sleeping</li>
+                  <li class="categorised__item">Rock / electronic music, but overall whatever sounds nice.</li>
+                </ul>
+              </section>
+
+              <section class="categorised__category" aria-labelledby="cat-sport">
+                <h3 id="cat-sport" class="categorised__heading">Sport</h3>
+                <ul class="categorised__list">
+                  <li class="categorised__item">Gym</li>
+                  <li class="categorised__item">Walking</li>
+                  <li class="categorised__item">Swimming</li>
+                  <li class="categorised__item">Spear fishing</li>
+                  <li class="categorised__item">Urbex</li>
+                  <li class="categorised__item">Shed hunting</li>
+                  <li class="categorised__item">Mountain trips</li>
+                  <li class="categorised__item">Romanian language</li>
+                </ul>
+              </section>
+
+            </div>
+          </section>
+
+        </div>
+      </section>
     </main>
 
     
+    <script src="scripts/tabs.js" defer></script>
+    <script src="scripts/timeline.js" defer></script>
+    <script src="scripts/categorised.js" defer></script>
+    <script src="scripts/sidebar.js" defer></script>
   </body>
 </html>

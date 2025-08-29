@@ -1,0 +1,54 @@
+/* Timeline core */
+.tl { margin-top: 12px; }
+
+.tl__sortbar { display: flex; gap: 8px; margin: 8px 0 12px; }
+.tl__sortbtn {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+.tl__sortbtn.is-active { border-color: #0077ff; color: #0077ff; }
+
+.tl__items {
+  display: grid;
+  gap: 16px;
+  position: relative;
+  padding-left: 36px;
+}
+.tl__items::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #e5e5e5;
+}
+
+.tl__item { position: relative; padding: 10px; }
+.tl__item:hover { background: #f3f3f3; }
+.tl__item::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 15px; /* use 50% + translateY(-50%) if you want vertical centering */
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #0077ff;
+  box-shadow: 0 0 0 3px #fff;
+}
+/* Alternative vertical centering:
+.tl__item::before { top: 50%; transform: translateY(-50%); }
+*/
+
+.tl__title { margin: 0 0 4px; font-size: 1.1rem; }
+.tl__meta  { margin: 0; color: #666; font-size: 0.95rem; }
+.tl__brief { margin: 6px 0 0; }
+
+.tl__details { margin-top: 6px; }
+.tl__summary { cursor: pointer; user-select: none; color: #0077ff; font-weight: 600; }
+.tl__points { margin: 8px 0 0; padding-left: 18px; }

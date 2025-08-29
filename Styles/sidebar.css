@@ -1,0 +1,155 @@
+:root{
+  --sidebar-w: 220px;    /* expanded width */
+  --sidebar-rail: 56px;  /* collapsed thin rail */
+  --gap: 24px;           /* space between sidebar and main */
+}
+
+/* ===== Base layout ===== */
+body {
+  margin: 0;
+  background: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* main card stays constrained */
+.main {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  max-width: 1300px;
+  width: 100%;
+  padding: 40px;
+}
+
+/* ===== Sidebar desktop (fixed) ===== */
+.sidebar {
+  position: fixed;
+  left: 40px;   /* same as body padding */
+  top: 40px;
+  width: var(--sidebar-w);
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  padding: 12px 16px;
+  z-index: 20;
+}
+
+/* leave room for sidebar next to the main card (desktop) */
+@media (min-width: 1100px) {
+  body {
+    /* push main card to the right so sidebar never overlaps */
+    padding-left: calc(40px + var(--sidebar-w) + var(--gap));
+  }
+}
+
+/* ===== Toggle button ===== */
+.sidebar__toggle{
+  display: none;            /* hidden on desktop */
+  width: 36px;
+  height: 36px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar__content { margin-top: 8px; }
+
+/* ===== Mobile / narrow screens: rail + overlay ===== */
+@media (max-width: 1099px) {
+  /* sidebar becomes a thin rail pinned to the left */
+  .sidebar{
+    width: var(--sidebar-rail);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sidebar__toggle{ display: inline-flex; }  /* show hamburger */
+
+  /* collapse content by default */
+  .sidebar__content{
+    display: none;
+  }
+
+  /* expanded (overlay) state: sidebar grows to full width and floats above main */
+  .sidebar.is-open{
+    width: min(86vw, 320px);
+    padding: 16px;
+  }
+  .sidebar.is-open .sidebar__content{
+    display: block;
+    max-height: 80vh;
+    overflow: auto;
+  }
+
+  /* scrim/backdrop appears when open */
+  .sidebar__scrim{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.35);
+    z-index: 15;            /* below sidebar (z=20), above main */
+  }
+  .sidebar__scrim[hidden]{ display: none; }
+
+  /* main card stays centered but never covered by the rail */
+  body{
+    padding-left: calc(40px + var(--sidebar-rail) + var(--gap));
+  }
+}
+
+/* Optional: make list items look good inside narrow overlay */
+.sidebar a{
+  display:flex; align-items:center;
+  gap:10px; text-decoration:none; color:#333; font-weight:600;
+}
+.sidebar li{ display:flex; align-items:center; margin-bottom:12px; }
+.sidebar .icon{ width:24px; height:24px; }
+
+
+/* ===== Sidebar slide animation ===== */
+@media (max-width: 1099px) {
+  /* Start with collapsed rail by default */
+  .sidebar {
+    transition: width 0.3s ease;
+    will-change: width;
+  }
+
+  /* Animate the full panel content inside the sidebar */
+  .sidebar__content {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.25s ease;
+    will-change: transform, opacity;
+  }
+
+  /* When open, slide content in */
+  .sidebar.is-open .sidebar__content {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  /* While closing, content slides back out */
+  .sidebar.closing .sidebar__content {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  /* The scrim fades in/out */
+  .sidebar__scrim {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .sidebar__scrim[hidden] {
+    display: block; /* keep element measurable while fading */
+    opacity: 0;
+    pointer-events: none;
+  }
+  .sidebar.is-open ~ .sidebar__scrim {
+    opacity: 1;
+  }
+}
