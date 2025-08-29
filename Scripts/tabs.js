@@ -1,3 +1,4 @@
+  console.log('tabs.js loaded');
 (function () {
   const tabs   = [...document.querySelectorAll('.tabs__list .tab')];
   const panels = [...document.querySelectorAll('.tabs__panels .tab-panel')];
