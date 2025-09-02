@@ -10,6 +10,10 @@
   "tab.skills": "Umiejętności",
   "tab.interests": "Zainteresowania",
 
+  "timeline.sortDesc": "Od najnowszego",
+  "timeline.sortAsc": "Od najstarszego",
+  "timeline.details": "Detale",
+
   "education.uni.master.title": "Uniwersytet Zielonogórski",
   "education.uni.master.degree": "Magister inżynier Informatyki (Inżynieria Systemów Informatycznych).",
   "education.uni.master.details.thesis": "Praca dyplomowa: Uniwersalny sterownik Smart Home (Zigbee, Home Assistant).",

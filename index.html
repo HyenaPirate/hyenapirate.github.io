@@ -53,23 +53,23 @@
       <section class="profile">
         <img src="assets/cv_photo_main.png" alt="Main photo" class="profile__photo" />
         <div class="profile__info">
-          <h2 class="profile__name" data-key="profile.name"></h2>
-          <p class="profile__desc" data-key="profile.desc"></p>
+          <h2 class="profile__name" data-key="profile.name">mgr inż. Mateusz Banaszkiewicz</h2>
+          <p class="profile__desc" data-key="profile.desc">Your new favourite employee.</p>
         </div>
       </section>
       
       <!-- Tabs: Different categories like skill set, education and work info, selectable -->
       <section class="tabs">
         <div class="tabs__list" role="tablist" aria-label="Profile sections">
-          <button class="tab is-active" role="tab" aria-selected="true" aria-controls="panel-about" id="tab-about" data-target="about">About</button>
+          <button class="tab is-active" role="tab" aria-selected="true" aria-controls="panel-about" id="tab-about" data-target="about" data-key="tab.about">About</button>
 
-          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-education" id="tab-education" data-target="education">Education</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-education" id="tab-education" data-target="education" data-key="tab.education">Education</button>
 
-          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-work" id="tab-work" data-target="work">Work Experience</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-work" id="tab-work" data-target="work" data-key="tab.work">Work Experience</button>
 
-          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-skills" id="tab-skills" data-target="skills">Skills</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-skills" id="tab-skills" data-target="skills" data-key="tab.skills">Skills</button>
 
-          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-interests" id="tab-interests" data-target="interests">Interests</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-interests" id="tab-interests" data-target="interests" data-key="tab.interests">Interests</button>
         </div>
 
         <div class="tabs__panels">
@@ -85,49 +85,49 @@
 
             <div class="tl" data-default-order="desc">
               <div class="tl__sortbar">
-                <button class="tl__sortbtn is-active" data-order="desc" aria-pressed="true">Newest → Oldest</button>
-                <button class="tl__sortbtn" data-order="asc" aria-pressed="false">Oldest → Newest</button>
+                <button class="tl__sortbtn is-active" data-order="desc" aria-pressed="true" data-key="timeline.sortDesc">Newest → Oldest</button>
+                <button class="tl__sortbtn" data-order="asc" aria-pressed="false" data-key="timeline.sortAsc">Oldest → Newest</button>
               </div>
 
               <div class="tl__items">
                 <article class="tl__item" data-start="2024-02" data-end="2025-07">
-                  <h3 class="tl__title">University of Zielona Góra</h3>
+                  <h3 class="tl__title" data-key="education.uni.master.title">University of Zielona Góra</h3>
                   <p class="tl__meta"><time class="tl__start"></time> – <time class="tl__end"></time> • Zielona Góra, PL</p>
-                  <p class="tl__brief">Master’s in Computer Science (Inżynieria Systemów Informatycznych).</p>
-                  <details class="tl__details"><summary class="tl__summary">Details</summary>
+                  <p class="tl__brief" data-key="education.uni.master.degree">Master’s in Computer Science (Inżynieria Systemów Informatycznych).</p>
+                  <details class="tl__details" data-key="timeline.details"><summary class="tl__summary">Details</summary>
                     <ul class="tl__points">
-                      <li>Thesis: Universal Smart Home Controller (Zigbee, Home Assistant).</li>
-                      <li>Focus: embedded systems, networks, security.</li>
+                      <li data-key="education.uni.master.details.thesis">Thesis: Universal Smart Home Controller (Zigbee, Home Assistant).</li>
+                      <li data-key="education.uni.master.details.focus">Focus: embedded systems, networks, security.</li>
                     </ul>
                   </details>
                 </article>
 
                 <article class="tl__item" data-start="2020-10" data-end="2024-02">
-                  <h3 class="tl__title">University of Zielona Góra</h3>
+                  <h3 class="tl__title" data-key="education.uni.engineer.title">University of Zielona Góra</h3>
                   <p class="tl__meta"><time class="tl__start"></time> – <time class="tl__end"></time> • Zielona Góra, PL</p>
-                  <p class="tl__brief">Engineer in Computer Science (Inżynieria systemów mikroinformatycznych).</p>
-                  <details class="tl__details"><summary class="tl__summary">Details</summary>
+                  <p class="tl__brief" data-key="education.uni.engineer.degree">Engineer in Computer Science (Inżynieria systemów mikroinformatycznych).</p>
+                  <details class="tl__details"><summary class="tl__summary" data-key="timeline.details">Details</summary>
                     <ul class="tl__points">
-                      <li>Thesis: Custom Smart Home Instalation.</li>
-                      <li>Focus: embedded systems, networks, security.</li>
+                      <li data-key="education.uni.engineer.details.thesis">Thesis: Custom Smart Home Instalation.</li>
+                      <li data-key="education.uni.engineer.details.focus">Focus: embedded systems, networks, security.</li>
                     </ul>
                   </details>
                 </article>              
 
               <article class="tl__item" data-start="2016-09" data-end="2019-06">
-                <h3 class="tl__title">IV Liceum Ogólnokształcące w Zielonej Górze “Lotnik”</h3>
+                <h3 class="tl__title" data-key="education.highschool.title">IV Liceum Ogólnokształcące w Zielonej Górze “Lotnik”</h3>
                 <p class="tl__meta">
                   <time class="tl__start"></time> – <time class="tl__end"></time> • Zielona Góra, PL
                 </p>
-                <p class="tl__brief">Technical profile (mechanics/electronics).</p>                
+                <p class="tl__brief" data-key="education.highschool.degree">Technical profile (mechanics/electronics).</p>                
               </article>
 
               <article class="tl__item" data-start="2013-09" data-end="2016-06">
-                <h3 class="tl__title">Gimnazjum nr. 2 w Zielonej Górze”</h3>
+                <h3 class="tl__title" data-key="education.middle.title">Gimnazjum nr. 2 w Zielonej Górze”</h3>
                 <p class="tl__meta">
                   <time class="tl__start"></time> – <time class="tl__end"></time> • Zielona Góra,PL
                 </p>
-                <p class="tl__brief">Technical profile (mechanics/electronics).</p>                
+                <p class="tl__brief" data-key="education.middle.degree">Technical profile (mechanics/electronics).</p>                
               </article>
 
             </div>
@@ -137,19 +137,19 @@
 
             <div class="tl" data-default-order="desc">
               <div class="tl__sortbar">
-                <button class="tl__sortbtn is-active" data-order="desc" aria-pressed="true">Newest → Oldest</button>
-                <button class="tl__sortbtn" data-order="asc" aria-pressed="false">Oldest → Newest</button>
+                <button class="tl__sortbtn is-active" data-order="desc" aria-pressed="true" data-key="timeline.sortDesc">Newest → Oldest</button>
+                <button class="tl__sortbtn" data-order="asc" aria-pressed="false" data-key="timeline.sortAsc">Oldest → Newest</button>
               </div>
 
               <div class="tl__items">
                 <article class="tl__item" data-start="2024-01" data-end="2025-08">
-                  <h3 class="tl__title">Self-employement</h3>
+                  <h3 class="tl__title" data-key="work.self.title">Self-employement</h3>
                   <p class="tl__meta"><time class="tl__start"></time> – <time class="tl__end"></time> • Zielona Góra, PL</p>
-                  <p class="tl__brief">Running an online shop selling animal bones and pelts.</p> 
-                  <details class="tl__details"><summary class="tl__summary">Details</summary>
-                    <p>Bucks For Bucks Mateusz Banaszkiewicz</p>
-                    <p>NIP: 9731098722</p>
-                    <ul class="tl__points">
+                  <p class="tl__brief" data-key="work.self.desc">Running an online shop selling animal bones and pelts.</p> 
+                  <details class="tl__details"><summary class="tl__summary" data-key="timeline.details">Details</summary>
+                    <p data-key="work.self.details.company">Bucks For Bucks Mateusz Banaszkiewicz</p>
+                    <p data-key="work.self.details.tax">NIP: 9731098722</p>
+                    <ul class="tl__points" data-key="work.self.details.items">
                       <li>Customer support.</li>
                       <li>Advertisement.</li>
                       <li>Bookkeeping.</li>
@@ -228,8 +228,8 @@
 
               <!-- Category -->
               <section class="categorised__category" aria-labelledby="cat-phys">
-                <h3 id="cat-phys" class="categorised__heading">Physical</h3>
-                <ul class="categorised__list">
+                <h3 id="cat-phys" class="categorised__heading"  data-key="skills.physical">Physical</h3>
+                <ul class="categorised__list"  data-key="skills.physical.items">
                   <li class="categorised__item" >60kg benchpress</li>
                   <li class="categorised__item" >190cm tall</li>
                   <li class="categorised__item" >Cat. B driver's licence with 7-year experience</li>

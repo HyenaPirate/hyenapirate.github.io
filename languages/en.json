@@ -10,6 +10,10 @@
   "tab.skills": "Skills",
   "tab.interests": "Interests",
 
+  "timeline.sortDesc": "Newest → Oldest",
+  "timeline.sortAsc": "Oldest → Newest",
+  "timeline.details": "Details",
+
   "education.uni.master.title": "University of Zielona Góra",
   "education.uni.master.degree": "Master’s in Computer Science (Inżynieria Systemów Informatycznych).",
   "education.uni.master.details.thesis": "Thesis: Universal Smart Home Controller (Zigbee, Home Assistant).",
