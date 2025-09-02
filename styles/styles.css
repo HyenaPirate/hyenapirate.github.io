@@ -20,8 +20,6 @@ body {
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-  max-width: 1300px;
-  width: 100%;
   padding: 40px;
   min-height: 1500px;
 }
@@ -35,23 +33,23 @@ body {
 }
 
 .profile__photo {
-  width: 300px;
+  width: 10vw;
   object-fit: cover;
   border-radius: 6px;
 }
 
 .profile__name {
-  margin: 30px 0 8px 0;
-  font-size: 3em;
+  margin: 30px 60px 8px 0px;
+  font-size: 3.3vw;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .profile__desc {
-  margin-top: 50px;
+  margin-top: 2vw;
   color: #aaa;
-  font-size: 1.5em;   /* restored */
+  font-size: 1.5vw;   /* restored */
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
                'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

@@ -1,0 +1,77 @@
+{
+  "profile.name": "mgr inż. Mateusz Banaszkiewicz",
+  "profile.desc": "Twój nowy ulubiony pracownik.",
+  "homepage.title": "Witaj świecie!",
+  "homepage.subtitle": "Ta strona jest obecnie w budowie. Poświęcam czas na naukę HTML, CSS i JS, aby doskonalić swoje umiejętności i stać się najlepszym pracownikiem, jakiego kiedykolwiek będziesz miał.",
+
+  "tab.about": "O mnie",
+  "tab.education": "Edukacja",
+  "tab.work": "Doświadczenie",
+  "tab.skills": "Umiejętności",
+  "tab.interests": "Zainteresowania",
+
+  "education.uni.master.title": "Uniwersytet Zielonogórski",
+  "education.uni.master.degree": "Magister inżynier Informatyki (Inżynieria Systemów Informatycznych).",
+  "education.uni.master.details.thesis": "Praca dyplomowa: Uniwersalny sterownik Smart Home (Zigbee, Home Assistant).",
+  "education.uni.master.details.focus": "Kierunek: systemy wbudowane, sieci, bezpieczeństwo.",
+
+  "education.uni.engineer.title": "Uniwersytet Zielonogórski",
+  "education.uni.engineer.degree": "Inżynier Informatyki (Inżynieria systemów mikroinformatycznych).",
+  "education.uni.engineer.details.thesis": "Praca dyplomowa: Własna instalacja Smart Home.",
+  "education.uni.engineer.details.focus": "Kierunek: systemy wbudowane, sieci, bezpieczeństwo.",
+
+  "education.highschool.title": "IV Liceum Ogólnokształcące w Zielonej Górze “Lotnik”",
+  "education.highschool.degree": "Profil techniczny (mechanika/elektronika).",
+
+  "education.middle.title": "Gimnazjum nr. 2 w Zielonej Górze",
+  "education.middle.degree": "Profil techniczny (mechanika/elektronika).",
+
+  "work.self.title": "Własna działalność",
+  "work.self.desc": "Prowadzenie sklepu internetowego ze szczątkami zwierząt i skórami.",
+  "work.self.details.company": "Bucks For Bucks Mateusz Banaszkiewicz",
+  "work.self.details.tax": "NIP: 9731098722",
+  "work.self.details.items": [
+    "Obsługa klienta.",
+    "Reklama.",
+    "Księgowość.",
+    "Rozliczenia.",
+    "Zarządzanie magazynem i dokumentacja.",
+    "Logistyka wysyłek międzynarodowych.",
+    "Prawidłowe i efektywne pakowanie."
+  ],
+
+  "work.internship.title": "Praktyka",
+  "work.internship.desc": "Pomoc w sklepie komputerowym.",
+  "work.internship.details.company": "Praca w Computer Partner Waldemar Łobaczewski",
+  "work.internship.details.address": "Bohaterów Westerplatte 11/1A/2, 65-001 Zielona Góra",
+  "work.internship.details.items": [
+    "Kontrola jakości importowanego sprzętu.",
+    "Zarządzanie wpisami w bazie danych.",
+    "Dokumentacja stanu magazynu.",
+    "Przygotowanie zamówień do wysyłki."
+  ],
+
+  "skills.coding": "Języki programowania",
+  "skills.coding.items": ["C / C++ / C#", "Python", "Java", "JavaScript"],
+  "skills.env": "Środowiska programistyczne",
+  "skills.env.items": ["Visual Studio Code", "Intellij IDEA", "ESP-IDF", "Arduino IDE", "Unreal Engine", "Unity"],
+  "skills.other": "Inne narzędzia",
+  "skills.other.items": ["GitHub", "Notion", "Trello", "Microsoft Office - Excel, Word, PowerPoint", "Narzędzia AI - ChatGPT"],
+  "skills.physical": "Fizyczne",
+  "skills.physical.items": ["Ławka 60kg", "Wzrost 190cm", "Prawo jazdy kat. B z 7-letnim doświadczeniem", "Dobre umiejętności manualne"],
+  "skills.social": "Społeczne",
+  "skills.social.items": ["Doskonała praca zespołowa", "Szybkie adaptowanie się do nowych warunków", "Dobra wydajność pod presją i w ograniczonym czasie", "Dostępność w elastycznych godzinach pracy", "Zaawansowany angielski, regularnie testowany z native speakerami"],
+
+  "interests.computer": "Informatyka",
+  "interests.computer.items": ["Elektronika", "Programowanie", "Rozwiązywanie problemów", "Robotyka"],
+  "interests.creativity": "Kreatywność",
+  "interests.creativity.items": ["Tworzenie gier", "Modelowanie 3D i drukowanie", "Rysowanie", "Animacja", "Tworzenie treści"],
+  "interests.gaming": "Gry",
+  "interests.gaming.items": ["Symulatory wyścigów", "Counter Strike 2", "Minecraft", "Symulatory polowań", "RPG", "3 Witcher III najlepsza", "Seria Five Nights At Freddy's"],
+  "interests.manual": "Manualne",
+  "interests.manual.items": ["Gotowanie", "Mechanika", "Jazda samochodem", "Majsterkowanie", "Czyszczenie okien"],
+  "interests.relax": "Relaks",
+  "interests.relax.items": ["YouTube", "Filmy animowane", "Filmy wojenne", "Gry", "Spanie", "Rock / muzyka elektroniczna, ale ogólnie wszystko, co ładnie brzmi."],
+  "interests.sport": "Sport",
+  "interests.sport.items": ["Siłownia", "Spacerowanie", "Pływanie", "Łowiectwo podwodne", "Urbex", "Polowanie w stodole", "Wycieczki górskie", "Język rumuński"]
+}

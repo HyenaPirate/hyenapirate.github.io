@@ -1,0 +1,77 @@
+{
+  "profile.name": "mgr inż. Mateusz Banaszkiewicz",
+  "profile.desc": "Your new favourite employee.",
+  "homepage.title": "Hello World!",
+  "homepage.subtitle": "This website is currently under construction. I take my time learning HTML, CSS and JS to perfect my skills, and become the best employee you will ever have.",
+
+  "tab.about": "About",
+  "tab.education": "Education",
+  "tab.work": "Work Experience",
+  "tab.skills": "Skills",
+  "tab.interests": "Interests",
+
+  "education.uni.master.title": "University of Zielona Góra",
+  "education.uni.master.degree": "Master’s in Computer Science (Inżynieria Systemów Informatycznych).",
+  "education.uni.master.details.thesis": "Thesis: Universal Smart Home Controller (Zigbee, Home Assistant).",
+  "education.uni.master.details.focus": "Focus: embedded systems, networks, security.",
+
+  "education.uni.engineer.title": "University of Zielona Góra",
+  "education.uni.engineer.degree": "Engineer in Computer Science (Inżynieria systemów mikroinformatycznych).",
+  "education.uni.engineer.details.thesis": "Thesis: Custom Smart Home Instalation.",
+  "education.uni.engineer.details.focus": "Focus: embedded systems, networks, security.",
+
+  "education.highschool.title": "IV Liceum Ogólnokształcące w Zielonej Górze “Lotnik”",
+  "education.highschool.degree": "Technical profile (mechanics/electronics).",
+
+  "education.middle.title": "Gimnazjum nr. 2 w Zielonej Górze",
+  "education.middle.degree": "Technical profile (mechanics/electronics).",
+
+  "work.self.title": "Self-employement",
+  "work.self.desc": "Running an online shop selling animal bones and pelts.",
+  "work.self.details.company": "Bucks For Bucks Mateusz Banaszkiewicz",
+  "work.self.details.tax": "NIP: 9731098722",
+  "work.self.details.items": [
+    "Customer support.",
+    "Advertisement.",
+    "Bookkeeping.",
+    "Accounting.",
+    "Inventory management and documentation.",
+    "Logistics of international shipping.",
+    "Proper and efficient packaging."
+  ],
+
+  "work.internship.title": "Internship",
+  "work.internship.desc": "Helper in a Computer shop.",
+  "work.internship.details.company": "Worked at Computer Partner Waldemar Łobaczewski",
+  "work.internship.details.address": "Bohaterów Westerplatte 11/1A/2, 65-001 Zielona Góra",
+  "work.internship.details.items": [
+    "Quality control of imported equipment.",
+    "Managing entries in the database.",
+    "Documentation of warehouse stock.",
+    "Preparation of orders for shipment."
+  ],
+
+  "skills.coding": "Coding Languages",
+  "skills.coding.items": ["C / C++ / C#", "Python", "Java", "JavaScript"],
+  "skills.env": "Programming Environments",
+  "skills.env.items": ["Visual Studio Code", "Intellij IDEA", "ESP-IDF", "Arduino IDE", "Unreal Engine", "Unity"],
+  "skills.other": "Other Environments",
+  "skills.other.items": ["GitHub", "Notion", "Trello", "Microsoft Office - Excel, Word, PowerPoint", "AI tools - ChatGPT"],
+  "skills.physical": "Physical",
+  "skills.physical.items": ["60kg benchpress", "190cm tall", "Cat. B driver's licence with 7-year experience", "Great manual skills"],
+  "skills.social": "Social",
+  "skills.social.items": ["Great teamwork", "Quick adapting to new surroundings", "Well performing under pressure and time constraints", "Available for elastic work hours", "Advanced English, frequently tested with native speakers"],
+
+  "interests.computer": "Computer Science",
+  "interests.computer.items": ["Electronics", "Programming", "Problem solving", "Robotics"],
+  "interests.creativity": "Creativity",
+  "interests.creativity.items": ["Game development", "3D modeling and printing", "Drawing", "Animation", "Content creation"],
+  "interests.gaming": "Gaming",
+  "interests.gaming.items": ["Racing games", "Counter Strike 2", "Minecraft", "Hunting simulators", "RPGs", "3 Witcher III the best", "Five Nights At Freddy's series"],
+  "interests.manual": "Manual",
+  "interests.manual.items": ["Cooking", "Mechanics", "Car driving", "Tinkering", "Cleaning windows"],
+  "interests.relax": "Relax",
+  "interests.relax.items": ["YouTube", "Animated movies", "War movies", "Gaming", "Sleeping", "Rock / electronic music, but overall whatever sounds nice."],
+  "interests.sport": "Sport",
+  "interests.sport.items": ["Gym", "Walking", "Swimming", "Spear fishing", "Urbex", "Shed hunting", "Mountain trips", "Romanian language"]
+}
