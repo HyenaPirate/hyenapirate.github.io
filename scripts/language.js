@@ -12,7 +12,9 @@ async function loadLanguage(lang) {
 function applyTranslations(translations) {
   document.querySelectorAll('[data-key]').forEach(el => {
     const key = el.dataset.key;
-    const value = key.split('.').reduce((o,i) => (o && o[i] !== undefined ? o[i] : undefined), translations);
+    const value = key.split('.').reduce((o, i) => (o && i in o ? o[i] : null), translations);
+
+    if (value === null || value === undefined) return; // skip missing keys
 
     if (Array.isArray(value)) {
       const firstLi = el.querySelector('li');
@@ -24,11 +26,12 @@ function applyTranslations(translations) {
         if (liClass) li.className = liClass;
         el.appendChild(li);
       });
-    } else if (value !== undefined && value !== null) {
+    } else {
       el.textContent = value;
     }
   });
 }
+
 
 
 // Init
