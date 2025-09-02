@@ -1,29 +1,20 @@
-async function loadLanguage(lang) {
-  try {
-    const res = await fetch(`languages/${lang}.json`);
-    const translations = await res.json();
-    applyTranslations(translations);
-    localStorage.setItem("siteLang", lang);
-  } catch (err) {
-    console.error("Failed to load language:", err);
-  }
-}
-
+// Drill-down translation function
 function applyTranslations(translations) {
   document.querySelectorAll('[data-key]').forEach(el => {
     const key = el.dataset.key;
-    const value = key.split('.').reduce((o, i) => (o && i in o ? o[i] : null), translations);
+    const value = key.split('.').reduce((o, i) => o?.[i], translations);
 
-    if (value === null || value === undefined) return; // skip missing keys
+    if (!value) return;
 
     if (Array.isArray(value)) {
-      const firstLi = el.querySelector('li');
-      const liClass = firstLi ? firstLi.className : '';
-      el.innerHTML = '';
-      value.forEach(item => {
+        const existingLi = el.querySelector('li');
+        const itemClass = existingLi ? existingLi.className : '';
+
+        el.innerHTML = ''; // clear existing content
+        value.forEach(item => {
         const li = document.createElement('li');
         li.textContent = item;
-        if (liClass) li.className = liClass;
+        if (itemClass) li.className = itemClass;
         el.appendChild(li);
       });
     } else {
@@ -32,14 +23,25 @@ function applyTranslations(translations) {
   });
 }
 
+// Load JSON for selected language
+async function loadLanguage(lang) {
+  try {
+    const res = await fetch(`languages/${lang}.json`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const translations = await res.json();
+    applyTranslations(translations);
+    localStorage.setItem('siteLang', lang);
+  } catch (err) {
+    console.error('Failed to load language:', err);
+  }
+}
 
-
-// Init
-document.addEventListener("DOMContentLoaded", () => {
-  const selector = document.getElementById("lang");
-  const savedLang = localStorage.getItem("siteLang") || "en";
+// Initialize language selector
+document.addEventListener('DOMContentLoaded', () => {
+  const selector = document.getElementById('lang');
+  const savedLang = localStorage.getItem('siteLang') || 'en';
   selector.value = savedLang;
   loadLanguage(savedLang);
 
-  selector.addEventListener("change", e => loadLanguage(e.target.value));
+  selector.addEventListener('change', e => loadLanguage(e.target.value));
 });
