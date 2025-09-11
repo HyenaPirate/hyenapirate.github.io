@@ -53,4 +53,23 @@
   });
 })();
 
+document.querySelectorAll('.copy-text').forEach(el => {
+    el.addEventListener('click', () => {
+      // Copy text
+      navigator.clipboard.writeText(el.dataset.value).catch(err => console.error(err));
+
+      // Create tooltip
+      let tooltip = document.createElement('span');
+      tooltip.className = 'copied-tooltip show';
+      tooltip.textContent = 'Copied!';
+      el.appendChild(tooltip);
+
+      // Remove tooltip after 1.2s
+      setTimeout(() => {
+        tooltip.remove();
+      }, 1200);
+    });
+  });
+
+
 

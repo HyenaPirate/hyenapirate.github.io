@@ -35,15 +35,40 @@
             </li>
           </ul>
 
-          <div class="language-select" hidden>
+          <div class="language-select" >
             <label for="lang">Language:</label>
             <select id="lang" aria-label="Select language">
-              <option value="en">English</option>
-              <option value="pl">Polski</option>
+              <option value="en">(Currently broken)</option>
+              <!--option value="en">English</option>
+              <option value="pl">Polski</option-->
             </select>
           </div>
 
-
+          <section class="contact-section">
+            <p class="contact-title">Contact:</p>
+            <ul class="sidebar__list">
+              <li>
+                <a> 
+                  <img src="assets/phone.png" alt="Phone" class="icon" />
+                  <span class="copy-text" data-value="+48570835286">+48 570 835 286</span>
+                </a>
+              </li>
+              <li>
+                <b> 
+                  <img src="assets/mail.png" alt="Email" class="icon" />
+                  <span class="copy-text" data-value="banaszkiewicz.mateusz00@gmail.com">
+                    banaszkiewicz.mateusz00@gmail.com
+                  </span>
+                </b>
+              </li>
+              <li>
+                <a> 
+                  <img src="assets/discord_logo.png" alt="Discord" class="icon" />
+                  <span class="copy-text" data-value="lisuavangard">lisuavangard</span>
+                </a>
+              </li>
+            </ul>
+          </section>
         </div>
     </aside>
 
@@ -70,6 +95,7 @@
           <button class="tab" role="tab" aria-selected="false" aria-controls="panel-skills" id="tab-skills" data-target="skills" data-key="tab.skills">Skills</button>
 
           <button class="tab" role="tab" aria-selected="false" aria-controls="panel-interests" id="tab-interests" data-target="interests" data-key="tab.interests">Interests</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-faq" id="tab-faq" data-target="faq" data-key="tab.fq">FAQ</button>
         </div>
 
         <div class="tabs__panels">
@@ -333,6 +359,40 @@
 
             </div>
           </section>
+
+          <section id="panel-faq" class="tab-panel" role="tabpanel" aria-labelledby="tab-faq">
+
+            <h1>Here's a list of popular questions you might have, with my answers.</h1>
+
+            <div class="faq">
+              <div class="faq__item">
+                <div class="faq__question">What do you expect from a job?</div>
+                <div class="faq__answer">I want to develop new skills, improve my self-discipline, and enhance my workflow. I aim to gain experience to become more efficient not only at work but also in my personal projects.</div>
+              </div>
+
+              <div class="faq__item">
+                <div class="faq__question">How much do you expect to earn?</div>
+                <div class="faq__answer">I didn’t study for 5 years and earn a master’s degree just to settle for minimum wage. I would hope for at least a few hundred above that. Of course, with limited experience I may not have much to offer initially, but give me a chance, and you will be happy to give me a raise just to keep me around.</div>
+              </div>
+
+              <div class="faq__item">
+                <div class="faq__question">What are your expectations regarding remote work?</div>
+                <div class="faq__answer">Working in the office has its benefits, but remote work can also be great. If a job requires long trips, I would prefer opportunities that minimize them. An extra hour of sleep improves my performance, so remote work is valuable, but I am also ready to work in the office when needed.</div>
+              </div>
+
+              <div class="faq__item">
+                <div class="faq__question">What is it that you actually want to do?</div>
+                <div class="faq__answer">I hope to land a somewhat creative job-designing things, solving problems, and being able to shine with individual ideas and engineering skills. Anything repetitive and monotonous for years is not appealing.</div>
+              </div>
+
+              <div class="faq__item">
+                <div class="faq__question">Where do you see yourself in the next 5 years?</div>
+                <div class="faq__answer">I will be climbing the ladder of management in this company, advancing higher and higher, only to end up at the top, with a sole purpose in mind: personally fire the person who asks such idiotic questions.</div>
+              </div>
+            </div>
+
+          </section>
+
 
         </div>
       </section>

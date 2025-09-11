@@ -1,5 +1,5 @@
 :root{
-  --sidebar-w: 220px;    /* expanded width */
+  --sidebar-w: 300px;    /* expanded width */
   --sidebar-rail: 56px;  /* collapsed thin rail */
   --gap: 24px;           /* space between sidebar and main */
 }
@@ -37,6 +37,10 @@
   background: #fff;
   cursor: pointer;
   font-size: 18px;
+  position: absolute;   /* pin it */
+  top: 12px;
+  left: 10px;
+  z-index: 30;  
   align-items: center;
   justify-content: center;
 }
@@ -48,6 +52,7 @@
   .sidebar{
     width: var(--sidebar-rail);
     padding: 8px;
+    min-height: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,6 +62,7 @@
   /* collapse content by default */
   .sidebar__content{
     display: none;
+    margin-top: 48px; 
   }
 
   /* expanded (overlay) state: sidebar grows to full width and floats above main */
@@ -93,6 +99,33 @@
 .sidebar li{ display:flex; align-items:center; margin-bottom:12px; }
 .sidebar .icon{ width:24px; height:24px; }
 
+.contact-title{
+    font-size: 1.5vw;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+.copy-text {
+    cursor: pointer;
+    position: relative;
+  }
+  .copied-tooltip {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    background: #333;
+    color: #fff;
+    padding: 2px 6px;
+    font-size: 10px;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+  .copied-tooltip.show {
+    opacity: 1;
+  }
 
 /* ===== Sidebar slide animation ===== */
 @media (max-width: 1099px) {
@@ -134,5 +167,5 @@
   }
   .sidebar.is-open ~ .sidebar__scrim {
     opacity: 1;
-  }
+  }    
 }
