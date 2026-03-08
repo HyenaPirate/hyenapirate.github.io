@@ -1,409 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>mgr inż. M.B. Profile page</title>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/timeline.css" />
-    <link rel="stylesheet" href="styles/categorised.css" />
-    <link rel="stylesheet" href="styles/sidebar.css" />
-  </head>
+<html>
 
-  <body>
-    <aside class="sidebar">
-      <button class="sidebar__toggle" aria-expanded="false" aria-controls="sidebar-content" title="Open menu">☰</button>
+    <head>
+        <title>My new and better page :3</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/introductionPage.css">
+        <link rel="stylesheet" href="styles/projectCard.css">
+        <link rel="stylesheet" href="styles/projectOverlay.css">
+        <script src="scripts/panelSwitching.js" defer></script>
+        <script src="scripts/introductionPage.js" defer></script>
+        <script src="scripts/projectsDatabase.js"></script>
+        <script src="scripts/projectsHandler.js" defer></script>
+        <script type="module" src="scripts/projectsOverlay.js"></script>
+        
+    </head>
 
-        <div id="sidebar-content" class="sidebar__content">
-          <ul class="sidebar__list">
-            <li>
-              <a href="https://www.youtube.com/@LisuAvangard" target="_blank" rel="noopener">
-                <img src="assets/youtube_logo.png" alt="YouTube" class="icon" />
-                YouTube
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/HyenaPirate" target="_blank" rel="noopener">
-                <img src="assets/github_logo.png" alt="GitHub" class="icon" />
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://www.deviantart.com/lisuavangard" target="_blank" rel="noopener">
-                <img src="assets/deviantart_logo.png" alt="DeviantArt" class="icon" />
-                DeviantArt
-              </a>
-            </li>
-          </ul>
+    <body>
 
-          <div class="language-select" >
-            <label for="lang">Language:</label>
-            <select id="lang" aria-label="Select language">
-              <option value="en">(Currently broken)</option>
-              <!--option value="en">English</option>
-              <option value="pl">Polski</option-->
-            </select>
-          </div>
+        <header>
+            <div class="container">
+            <div class="NavigationPanel">
+                <button class="NavButton" data-target="introductionBox">Introduction</button>
+                <button class="NavButton" data-target="projectsBox">Projects</button>
+                <button class="NavButton" data-target="skillsBox">Skills</button>
+            </div>
+            </div>
+        </header>
 
-          <section class="contact-section">
-            <p class="contact-title">Contact:</p>
-            <ul class="sidebar__list">
-              <li>
-                <a> 
-                  <img src="assets/phone.png" alt="Phone" class="icon" />
-                  <span class="copy-text" data-value="+48570835286">+48 570 835 286</span>
-                </a>
-              </li>
-              <li>
-                <b> 
-                  <img src="assets/mail.png" alt="Email" class="icon" />
-                  <span class="copy-text" data-value="banaszkiewicz.mateusz00@gmail.com">
-                    banaszkiewicz.mateusz00@gmail.com
-                  </span>
-                </b>
-              </li>
-              <li>
-                <a> 
-                  <img src="assets/discord_logo.png" alt="Discord" class="icon" />
-                  <span class="copy-text" data-value="lisuavangard">lisuavangard</span>
-                </a>
-              </li>
-            </ul>
-          </section>
+        <main>         
+            <!-- INTRODUCTION -->
+            <div id="introductionBox" class="introductionBox active">
+                <div class="introLeftSection">
+                    <div class="introBio">
+                        <p>
+                        Hi, it's me. You probably wonder how I got in this position. I am shit out of luck and need to rethink my life. I am looking for a job that will not have me break my back everyday and still not meet the quota, no matter how much I ask what should I do better in order to improve. Fuck this, man.
+                        </p>                        
+                    </div>
+                    <div class="photoSlider">
+                        <p>
+                            Check out my projects nerd
+                        </p>
+                        <div class="sliderTrack">
+                            <img src="assets/cv_photo_main.png" alt="">
+                            <img src="assets/boykisser.png" alt="">
+                            <img src="assets/volkswagen.png" alt="">
+                            <img src="assets/github_logo.png">
+                            <img src="assets/White-noise.jpg" alt="">
+                            <img src="assets/boykisserClicking.gif" alt=""> <!-- repeat for seamless loop -->
+                        </div>
+                    </div>
+                </div>
+                <div class="introPhotos">
+                    <img src="assets/projects/BarTech.png" alt="photosus">                    
+                </div>                
+            </div>
+            <!-- PROJECTS -->
+            <div id="projectsBox" class="projectsBox">
+            </div>
+            <!-- SKILLS -->
+            <div id="skillsBox" class="skillsBox">
+                <p>I have none.</p>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="FootInfo">
+                    <div class="FootLink">Github</div>
+                    <div class="FootLink">Youtube</div>
+                    <div class="FootLink">Twitter</div>
+                    <div class="FootLink">Reddit</div>
+                    <div class="FootLink">Steam</div>
+                    <div class="FootLink">OtherPlacesThatWillMakeTheRecruiterNotWannaHireMe.org</div>                         
+                    <div class="FootLink">LinkedIn</div>                         
+                </div>
+            
+            </div>
+        </footer>
+
+        <div id="projectOverlay" class="overlay">
+            <div class="overlayContent">
+                <button id="overlayClose">X</button>
+                <h1 id="overlayTitle"></h1>
+                <p id="overlayDescription"></p>
+                <img id="overlayImage">
+                <div id="overlayCustom"></div>
+            </div>
         </div>
-    </aside>
-
-    <div class="sidebar__scrim" hidden></div>
-
-    <main class="main">
-      <section class="profile">
-        <img src="assets/cv_photo_main.png" alt="Main photo" class="profile__photo" />
-        <div class="profile__info">
-          <h2 class="profile__name" data-key="profile.name">mgr inż. Mateusz Banaszkiewicz</h2>
-          <p class="profile__desc" data-key="profile_desc">Your new favourite employee.</p>
-        </div>
-      </section>
-      
-      <!-- Tabs: Different categories like skill set, education and work info, selectable -->
-      <section class="tabs">
-        <div class="tabs__list" role="tablist" aria-label="Profile sections">
-          <button class="tab is-active" role="tab" aria-selected="true" aria-controls="panel-about" id="tab-about" data-target="about" data-key="tab.about">About</button>
-
-          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-education" id="tab-education" data-target="education" data-key="tab.education">Education</button>
-
-          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-work" id="tab-work" data-target="work" data-key="tab.work">Work Experience</button>
-
-          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-skills" id="tab-skills" data-target="skills" data-key="tab.skills">Skills</button>
-
-          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-interests" id="tab-interests" data-target="interests" data-key="tab.interests">Interests</button>
-          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-faq" id="tab-faq" data-target="faq" data-key="tab.fq">FAQ</button>
-        </div>
-
-        <div class="tabs__panels">
-          <section id="panel-about" class="tab-panel is-active" role="tabpanel" aria-labelledby="tab-about">
-            <p>wip</p>
-            <h1 data-key="homepage.title"></h1>
-            <p data-key="homepage.subtitle">This website is currently under construction. I take my time learning HTML, CSS and JS to perfect my skills, and become the best employee you will ever have.</p>
-          </section>
-
-
-
-          <section id="panel-education" class="tab-panel" role="tabpanel" aria-labelledby="tab-education">            
-
-            <div class="tl" data-default-order="desc">
-              <div class="tl__sortbar">
-                <button class="tl__sortbtn is-active" data-order="desc" aria-pressed="true" data-key="timeline.sortDesc">Newest → Oldest</button>
-                <button class="tl__sortbtn" data-order="asc" aria-pressed="false" data-key="timeline.sortAsc">Oldest → Newest</button>
-              </div>
-
-              <div class="tl__items">
-                <article class="tl__item" data-start="2024-02" data-end="2025-07">
-                  <h3 class="tl__title" data-key="education.uni.master.title">University of Zielona Góra</h3>
-                  <p class="tl__meta"><time class="tl__start"></time> – <time class="tl__end"></time> • Zielona Góra, PL</p>
-                  <p class="tl__brief" data-key="education.uni.master.degree">Master’s in Computer Science (Inżynieria Systemów Informatycznych).</p>
-                  <details class="tl__details" data-key="timeline.details"><summary class="tl__summary">Details</summary>
-                    <ul class="tl__points">
-                      <li data-key="education.uni.master.details.thesis">Thesis: Universal Smart Home Controller (Zigbee, Home Assistant).</li>
-                      <li data-key="education.uni.master.details.focus">Focus: embedded systems, networks, security.</li>
-                    </ul>
-                  </details>
-                </article>
-
-                <article class="tl__item" data-start="2020-10" data-end="2024-02">
-                  <h3 class="tl__title" data-key="education.uni.engineer.title">University of Zielona Góra</h3>
-                  <p class="tl__meta"><time class="tl__start"></time> – <time class="tl__end"></time> • Zielona Góra, PL</p>
-                  <p class="tl__brief" data-key="education.uni.engineer.degree">Engineer in Computer Science (Inżynieria systemów mikroinformatycznych).</p>
-                  <details class="tl__details"><summary class="tl__summary" data-key="timeline.details">Details</summary>
-                    <ul class="tl__points">
-                      <li data-key="education.uni.engineer.details.thesis">Thesis: Custom Smart Home Instalation.</li>
-                      <li data-key="education.uni.engineer.details.focus">Focus: embedded systems, networks, security.</li>
-                    </ul>
-                  </details>
-                </article>              
-
-              <article class="tl__item" data-start="2016-09" data-end="2019-06">
-                <h3 class="tl__title" data-key="education.highschool.title">IV Liceum Ogólnokształcące w Zielonej Górze “Lotnik”</h3>
-                <p class="tl__meta">
-                  <time class="tl__start"></time> – <time class="tl__end"></time> • Zielona Góra, PL
-                </p>
-                <p class="tl__brief" data-key="education.highschool.degree">Technical profile (mechanics/electronics).</p>                
-              </article>
-
-              <article class="tl__item" data-start="2013-09" data-end="2016-06">
-                <h3 class="tl__title" data-key="education.middle.title">Gimnazjum nr. 2 w Zielonej Górze”</h3>
-                <p class="tl__meta">
-                  <time class="tl__start"></time> – <time class="tl__end"></time> • Zielona Góra,PL
-                </p>
-                <p class="tl__brief" data-key="education.middle.degree">Technical profile (mechanics/electronics).</p>                
-              </article>
-
-            </div>
-          </section>
-
-          <section id="panel-work" class="tab-panel" role="tabpanel" aria-labelledby="tab-work">            
-
-            <div class="tl" data-default-order="desc">
-              <div class="tl__sortbar">
-                <button class="tl__sortbtn is-active" data-order="desc" aria-pressed="true" data-key="timeline.sortDesc">Newest → Oldest</button>
-                <button class="tl__sortbtn" data-order="asc" aria-pressed="false" data-key="timeline.sortAsc">Oldest → Newest</button>
-              </div>
-
-              <div class="tl__items">
-                <article class="tl__item" data-start="2024-01" data-end="2025-08">
-                  <h3 class="tl__title" data-key="work.self.title">Self-employement</h3>
-                  <p class="tl__meta"><time class="tl__start"></time> – <time class="tl__end"></time> • Zielona Góra, PL</p>
-                  <p class="tl__brief" data-key="work.self.desc">Running an online shop selling animal bones and pelts.</p> 
-                  <details class="tl__details"><summary class="tl__summary" data-key="timeline.details">Details</summary>
-                    <p data-key="work.self.details.company">Bucks For Bucks Mateusz Banaszkiewicz</p>
-                    <p data-key="work.self.details.tax">NIP: 9731098722</p>
-                    <ul class="tl__points" data-key="work.self.details.items">
-                      <li>Customer support.</li>
-                      <li>Advertisement.</li>
-                      <li>Bookkeeping.</li>
-                      <li>Accounting.</li>
-                      <li>Inventory management and documentation.</li>
-                      <li>Logistics of international shipping.</li>
-                      <li>Proper and efficient packaging.</li>
-                    </ul>
-                  </details>                 
-                </article>
-
-                <article class="tl__item" data-start="2022-08" data-end="2022-09">
-                  <h3 class="tl__title">Internship</h3>
-                  <p class="tl__meta"><time class="tl__start"></time> – <time class="tl__end"></time> • Zielona Góra, PL</p>
-                  <p class="tl__brief">Helper in a Computer shop.</p>
-                  <details class="tl__details"><summary class="tl__summary">Details</summary>
-                    <p>Worked at Computer Partner Waldemar Łobaczewski</p>
-                    <p>Bohaterów Westerplatte 11/1A/2, 65-001 Zielona Góra</p>
-                    <ul class="tl__points">
-                      <li>Quality  control of imported equipment.</li>                      
-                      <li>Managing entries in the database.</li>                      
-                      <li>Documentation of warehouse stock.</li>                      
-                      <li>Preparation of orders for shipment.</li>    
-                    </ul>
-                  </details>
-                </article>
-              
-              </div>
-          </section>
-
-          
-
-          <section id="panel-skills" class="tab-panel" role="tabpanel" aria-labelledby="tab-skills">
-
-            <div class="categorised-search">
-              <input type="search" class="categorised-search__input" placeholder="Search skills…" aria-label="Search skills">
-            </div>
-
-            <div class="categorised">
-
-              <!-- Category -->
-              <section class="categorised__category" aria-labelledby="cat-prog">
-                <h3 id="cat-prog" class="categorised__heading">Coding Languages</h3>
-                <ul class="categorised__list">
-                  <li class="categorised__item" >C / C++ / C#</li>
-                  <li class="categorised__item" >Python</li>
-                  <li class="categorised__item" >Java</li>
-                  <li class="categorised__item" >JavaScript</li>
-                </ul>
-              </section>
-
-              <!-- Category -->
-              <section class="categorised__category" aria-labelledby="cat-ide">
-                <h3 id="cat-ide" class="categorised__heading">Programming Enviroments</h3>
-                <ul class="categorised__list">
-                  <li class="categorised__item" >Visual Studio Code</li>
-                  <li class="categorised__item" >Intellij IDEA</li>
-                  <li class="categorised__item" >ESP-IDF</li>
-                  <li class="categorised__item" >Arduino IDE</li>
-                  <li class="categorised__item" >Unreal Engine</li>
-                  <li class="categorised__item" >Unity</li>
-                </ul>
-              </section>
-
-              <!-- Category -->
-              <section class="categorised__category" aria-labelledby="cat-tools">
-                <h3 id="cat-tools" class="categorised__heading">Other Enviroments</h3>
-                <ul class="categorised__list">
-                  <li class="categorised__item" >GitHub</li>
-                  <li class="categorised__item" >Notion</li>
-                  <li class="categorised__item" >Trello</li>
-                  <li class="categorised__item" >Microsoft Office - Excel, Word, PowerPoint</li>
-                  <li class="categorised__item" >AI tools - ChatGPT</li>
-                </ul>
-              </section>
-
-              <!-- Category -->
-              <section class="categorised__category" aria-labelledby="cat-phys">
-                <h3 id="cat-phys" class="categorised__heading"  data-key="skills.physical">Physical</h3>
-                <ul class="categorised__list"  data-key="skills.physical.items">
-                  <li class="categorised__item" >60kg benchpress</li>
-                  <li class="categorised__item" >190cm tall</li>
-                  <li class="categorised__item" >Cat. B driver's licence with 7-year experience</li>
-                  <li class="categorised__item" >Great manual skills</li>
-                </ul>
-              </section>
-
-              <section class="categorised__category" aria-labelledby="cat-social">
-                <h3 id="cat-social" class="categorised__heading">Social</h3>
-                <ul class="categorised__list">
-                  <li class="categorised__item" >Great teamwork</li>
-                  <li class="categorised__item" >Quick adapting to new surroundings</li>
-                  <li class="categorised__item" >Well performing under pressure and time constraints</li>
-                  <li class="categorised__item" >Avaible for elastic work hours</li>
-                  <li class="categorised__item" >Advanced english, frequently tested with native speakers</li>
-                </ul>
-              </section>
-
-            </div>
-          </section>
-          
-
-          <section id="panel-interests" class="tab-panel" role="tabpanel" aria-labelledby="tab-interests">
-
-            <div class="categorised-search">
-              <input type="search" class="categorised-search__input" placeholder="Search entries…" aria-label="Search entries">
-            </div>
-
-            <div class="categorised">
-
-              <section class="categorised__category" aria-labelledby="cat-computer-science">
-                <h3 id="cat-computer-science" class="categorised__heading">Computer Science</h3>
-                <ul class="categorised__list">
-                  <li class="categorised__item">Electronics</li>
-                  <li class="categorised__item">Programming</li>
-                  <li class="categorised__item">Problem solving</li>
-                  <li class="categorised__item">Robotics</li>
-                </ul>
-              </section>
-
-              <section class="categorised__category" aria-labelledby="cat-creativity">
-                <h3 id="cat-creativity" class="categorised__heading">Creativity</h3>
-                <ul class="categorised__list">
-                  <li class="categorised__item">Game development</li>
-                  <li class="categorised__item">3D modeling and printing</li>
-                  <li class="categorised__item">Drawing</li>
-                  <li class="categorised__item">Animation</li>
-                  <li class="categorised__item">Content creation</li>
-                </ul>
-              </section>
-
-              <section class="categorised__category" aria-labelledby="cat-gaming">
-                <h3 id="cat-gaming" class="categorised__heading">Gaming</h3>
-                <ul class="categorised__list">
-                  <li class="categorised__item">Racing games</li>
-                  <li class="categorised__item">Counter Strike 2</li>
-                  <li class="categorised__item">Minecraft</li>
-                  <li class="categorised__item">Hunting simulators</li>
-                  <li class="categorised__item">RPGs</li>
-                  <li class="categorised__item">3 Witcher III the best</li>
-                  <li class="categorised__item">Five Nights At Freddy's series</li>
-                </ul>
-              </section>
-
-              <section class="categorised__category" aria-labelledby="cat-manual">
-                <h3 id="cat-manual" class="categorised__heading">Manual</h3>
-                <ul class="categorised__list">
-                  <li class="categorised__item">Cooking</li>
-                  <li class="categorised__item">Mechanics</li>
-                  <li class="categorised__item">Car driving</li>
-                  <li class="categorised__item">Tinkering</li>
-                  <li class="categorised__item">Cleaning windows</li>
-                </ul>
-              </section>
-
-              <section class="categorised__category" aria-labelledby="cat-relax">
-                <h3 id="cat-relax" class="categorised__heading">Relax</h3>
-                <ul class="categorised__list">
-                  <li class="categorised__item">YouTube</li>
-                  <li class="categorised__item">Animated movies</li>
-                  <li class="categorised__item">War movies</li>
-                  <li class="categorised__item">Gaming</li>
-                  <li class="categorised__item">Sleeping</li>
-                  <li class="categorised__item">Rock / electronic music, but overall whatever sounds nice.</li>
-                </ul>
-              </section>
-
-              <section class="categorised__category" aria-labelledby="cat-sport">
-                <h3 id="cat-sport" class="categorised__heading">Sport</h3>
-                <ul class="categorised__list">
-                  <li class="categorised__item">Gym</li>
-                  <li class="categorised__item">Walking</li>
-                  <li class="categorised__item">Swimming</li>
-                  <li class="categorised__item">Spear fishing</li>
-                  <li class="categorised__item">Urbex</li>
-                  <li class="categorised__item">Shed hunting</li>
-                  <li class="categorised__item">Mountain trips</li>
-                  <li class="categorised__item">Romanian language</li>
-                </ul>
-              </section>
-
-            </div>
-          </section>
-
-          <section id="panel-faq" class="tab-panel" role="tabpanel" aria-labelledby="tab-faq">
-
-            <h1>Here's a list of popular questions you might have, with my answers.</h1>
-
-            <div class="faq">
-              <div class="faq__item">
-                <div class="faq__question">What do you expect from a job?</div>
-                <div class="faq__answer">I want to develop new skills, improve my self-discipline, and enhance my workflow. I aim to gain experience to become more efficient not only at work but also in my personal projects.</div>
-              </div>
-
-              <div class="faq__item">
-                <div class="faq__question">How much do you expect to earn?</div>
-                <div class="faq__answer">I didn’t study for 5 years and earn a master’s degree just to settle for minimum wage. I would hope for at least a few hundred above that. Of course, with limited experience I may not have much to offer initially, but give me a chance, and you will be happy to give me a raise just to keep me around.</div>
-              </div>
-
-              <div class="faq__item">
-                <div class="faq__question">What are your expectations regarding remote work?</div>
-                <div class="faq__answer">Working in the office has its benefits, but remote work can also be great. If a job requires long trips, I would prefer opportunities that minimize them. An extra hour of sleep improves my performance, so remote work is valuable, but I am also ready to work in the office when needed.</div>
-              </div>
-
-              <div class="faq__item">
-                <div class="faq__question">What is it that you actually want to do?</div>
-                <div class="faq__answer">I hope to land a somewhat creative job-designing things, solving problems, and being able to shine with individual ideas and engineering skills. Anything repetitive and monotonous for years is not appealing.</div>
-              </div>
-
-              <div class="faq__item" hidden>
-                <div class="faq__question">Where do you see yourself in the next 5 years?</div>
-                <div class="faq__answer">I will be climbing the ladder of management in this company, advancing higher and higher, only to end up at the top, with a sole purpose in mind: personally fire the person who asks such idiotic questions.</div>
-              </div>
-            </div>
-
-          </section>
-
-
-        </div>
-      </section>
-    </main>
-
-    
-    <script src="scripts/tabs.js" defer></script>
-    <script src="scripts/timeline.js" defer></script>
-    <script src="scripts/categorised.js" defer></script>
-    <script src="scripts/sidebar.js" defer></script>
-    <script src="scripts/language.js" defer></script>
-    
-  </body>
+        
+    </body>
 </html>

@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    background-color: lightblue;
+    padding: 20px;
+    height: 80px;
+}
+
+main {
+    background-color: darkslategray;
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    background-color: darkgray;
+    padding: 20px;
+    height: 60px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.NavigationPanel{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.NavButton{
+    display: flex;
+    width: 100px;
+    height: 30px;
+    background-color: antiquewhite;
+    border-style: solid;
+    border-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavButton:hover {
+    background-color: #0056b3;   /* darker on hover */
+    transform: scale(1.1);   
+    cursor: pointer;    /* small pop effect */
+}
+
+.NavButton:active {
+    transform: scale(0.95);       /* click feedback */
+}
+
+
+.FootInfo{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.FootLink{
+    font-family: sans-serif;
+}
+
+.introductionBox, .projectsBox, .skillsBox{
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease, max-height 0.4s ease;
+}
+
+.introductionBox.active, .projectsBox.active, .skillsBox.active{
+    opacity: 1;
+    max-height: 2000px; /* large enough to show any content */
+}
+
+.projectsBox{
+    /*background-color: aquamarine;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    padding: 20px;
+}
+
+.skillsBox{
+    background-color: khaki;
+    display: flex;
+}
+

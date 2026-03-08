@@ -1,0 +1,36 @@
+.projectCard{
+    background-color: lightskyblue;
+    width: 300px;
+    height: 300px;
+    display:flex;
+    padding: 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-style:dashed;
+    border-width: 7px;
+    border-color: darkcyan;
+}
+
+.projectCard img{
+    width: auto;
+    max-width: 270px;
+    height: 190px;
+    /*background-color: burlywood;*/
+}
+
+.projectCard h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    text-align: center;
+    margin: 10px 0 5px;
+    word-wrap: break-word;
+    /*background-color: brown;*/
+    height: 30px;
+    font-size: clamp(0.6rem, 2.5vw, 1.5rem);
+}
+
+.projectCard:hover{
+    background-color: lightblue;
+    cursor: pointer;
+}
