@@ -1,25 +1,9 @@
-export function loadProject(){
+import * as pc from "../../../scripts/projectsOverlay.js";
 
-    const container = document.getElementById("overlayCustom");
+export function loadProject() {
+  const container = document.getElementById("overlayCustom");
 
-    createChapter(
-        container,
-        "Overview",
-        "This project is my ESP32-C6 Zigbee smart home module."
-    );
+  pc.createChapter(container, "Overview", "This is Pod Kartonem project");
 
-    createImage(
-        container,
-        "assets/projects/zigbee/board.jpg"
-    );
-
-    createChapter(
-        container,
-        "Demo"
-    );
-
-    createYoutube(
-        container,
-        "abc123"
-    );
+  pc.createImage(container, "assets/projects/podKartonem/image.png");
 }
