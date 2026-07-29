@@ -1,0 +1,30 @@
+.tag-container {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 30px;
+  border-radius: 999px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.6px;
+  word-spacing: 1.2px;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-shadow: 3px 2px 4px rgba(11, 42, 63, 0.67);
+}
+
+.tag-unknown {
+  display: flex;
+  align-items: center;
+  height: 26px;
+  background: #b9b9b9;
+  border: 2px dashed dimgray;
+  color: black;
+  font-size: 0.9rem;
+  text-shadow: 3px 1px 5px rgba(236, 231, 231, 0.86);
+}

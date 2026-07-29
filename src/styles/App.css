@@ -1,0 +1,30 @@
+:root {
+  --navbar-height: 8vh;
+}
+:root,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.AppDiv {
+  height: 100vh;
+  width: 100vw;
+  background-repeat: repeat;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+.navbar {
+  height: var(--navbar-height);
+}
+
+.main-content {
+  height: calc(100vh - var(--navbar-height));
+  margin-top: var(--navbar-height);
+  box-sizing: border-box;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}

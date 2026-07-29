@@ -1,0 +1,99 @@
+.overlay-background {
+  background-color: rgba(0, 0, 0, 0.7);
+
+  position: fixed;
+  inset: 0;
+
+  z-index: 9;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-container {
+  background-color: white;
+  padding: 30px;
+
+  margin-top: var(--navbar-height);
+
+  width: 60%;
+
+  max-height: 80vh;
+
+  overflow-y: auto;
+  border-radius: 20px;
+
+  z-index: 10;
+}
+.project-header-container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 30vh; /* same as your image max-height */
+  padding: 1vw;
+  border-bottom: 2px solid darkgrey;
+}
+.project-header-text-section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 1vw;
+  padding-bottom: 0px;
+}
+
+.project-image {
+  display: block;
+  min-height: 25vh;
+  max-height: 30vh;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.project-title {
+  display: flex;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 50px;
+  letter-spacing: -0.8px;
+  word-spacing: 4.6px;
+  color: #232323;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: italic;
+  font-variant: small-caps;
+  text-transform: none;
+  padding: 0px;
+  margin: 0%;
+}
+
+.project-state {
+  width: fit-content;
+  height: auto;
+  margin-top: 10px;
+  padding: 3px;
+  padding-inline: 20px;
+  border-radius: 100vw;
+}
+
+.project-summary {
+  padding-top: 20px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.6px;
+  word-spacing: 0px;
+  color: #7c7c7c;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: italic;
+  font-variant: normal;
+  text-transform: none;
+  text-indent: 40px;
+}
+
+.project-tags {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}

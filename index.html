@@ -1,92 +1,13 @@
-<!DOCTYPE html>
-<html>
-
-    <head>
-        <title>My new and better page :3</title>
-        <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="styles/introductionPage.css">
-        <link rel="stylesheet" href="styles/projectCard.css">
-        <link rel="stylesheet" href="styles/projectOverlay.css">
-        <script src="scripts/panelSwitching.js" defer></script>
-        <script src="scripts/introductionPage.js" defer></script>
-        <script src="scripts/projectsDatabase.js"></script>
-        <script src="scripts/projectsHandler.js" defer></script>
-        <script type="module" src="scripts/projectsOverlay.js"></script>
-        
-    </head>
-
-    <body>
-
-        <header>
-            <div class="container">
-            <div class="NavigationPanel">
-                <button class="NavButton" data-target="introductionBox">Introduction</button>
-                <button class="NavButton" data-target="projectsBox">Projects</button>
-                <button class="NavButton" data-target="skillsBox">Skills</button>
-            </div>
-            </div>
-        </header>
-
-        <main>         
-            <!-- INTRODUCTION -->
-            <div id="introductionBox" class="introductionBox active">
-                <div class="introLeftSection">
-                    <div class="introBio">
-                        <p>
-                        Hi, it's me. You probably wonder how I got in this position. I am shit out of luck and need to rethink my life. I am looking for a job that will not have me break my back everyday and still not meet the quota, no matter how much I ask what should I do better in order to improve. Fuck this, man.
-                        </p>                        
-                    </div>
-                    <div class="photoSlider">
-                        <p>
-                            Check out my projects nerd
-                        </p>
-                        <div class="sliderTrack">
-                            <img src="assets/cv_photo_main.png" alt="">
-                            <img src="assets/boykisser.png" alt="">
-                            <img src="assets/volkswagen.png" alt="">
-                            <img src="assets/github_logo.png">
-                            <img src="assets/White-noise.jpg" alt="">
-                            <img src="assets/boykisserClicking.gif" alt=""> <!-- repeat for seamless loop -->
-                        </div>
-                    </div>
-                </div>
-                <div class="introPhotos">
-                    <img src="assets/projects/BarTech.png" alt="photosus">                    
-                </div>                
-            </div>
-            <!-- PROJECTS -->
-            <div id="projectsBox" class="projectsBox">
-            </div>
-            <!-- SKILLS -->
-            <div id="skillsBox" class="skillsBox">
-                <p>I have none.</p>
-            </div>
-        </main>
-
-        <footer>
-            <div class="container">
-                <div class="FootInfo">
-                    <div class="FootLink">Github</div>
-                    <div class="FootLink">Youtube</div>
-                    <div class="FootLink">Twitter</div>
-                    <div class="FootLink">Reddit</div>
-                    <div class="FootLink">Steam</div>
-                    <div class="FootLink">OtherPlacesThatWillMakeTheRecruiterNotWannaHireMe.org</div>                         
-                    <div class="FootLink">LinkedIn</div>                         
-                </div>
-            
-            </div>
-        </footer>
-
-        <div id="projectOverlay" class="overlay">
-            <div class="overlayContent">
-                <button id="overlayClose">X</button>
-                <h1 id="overlayTitle"></h1>
-                <p id="overlayDescription"></p>
-                <img id="overlayImage">
-                <div id="overlayCustom"></div>
-            </div>
-        </div>
-        
-    </body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mateusz Banaszkiewicz - Portfolio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

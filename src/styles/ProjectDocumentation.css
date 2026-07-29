@@ -1,0 +1,243 @@
+.doc-chapter {
+  border-bottom: 1px solid lightblue;
+}
+
+.chapter-title {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  padding-left: 2%;
+}
+
+.chapter-text {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0px;
+  word-spacing: 2px;
+  color: #303030;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+
+.chapter-text p {
+  text-indent: 2em;
+  margin: 0 0 1rem;
+  text-align: justify;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.doc-element {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.doc-element-title {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  color: #202020;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+/* Code */
+
+.doc-code {
+  background-color: #1e1e1e;
+  color: #eeeeee;
+
+  padding: 1.5rem;
+  border-radius: 10px;
+
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 1rem;
+
+  overflow-x: auto;
+  white-space: pre;
+}
+
+/* Tables */
+
+.doc-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.doc-table th,
+.doc-table td {
+  border: 1px solid #b0b0b0;
+  padding: 0.7rem;
+  text-align: left;
+}
+
+.doc-table th {
+  background-color: #eeeeee;
+  font-weight: 700;
+}
+
+.doc-table tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+/* Quotes */
+
+.doc-quote {
+  border-left: 5px solid #606060;
+
+  margin: 0;
+  padding: 1rem 1.5rem;
+
+  background-color: #f5f5f5;
+
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 1.1rem;
+
+  color: #404040;
+}
+
+/* Shared media */
+
+.doc-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.doc-image,
+.doc-video {
+  max-width: 100%;
+  height: auto;
+  outline: 7px outset rgba(127, 135, 147, 0.7);
+  outline-offset: 0px;
+  -webkit-box-shadow: 9px 10px 15px 8px rgba(0, 0, 0, 0.7);
+  box-shadow: 9px 10px 15px 8px rgba(0, 0, 0, 0.7);
+}
+
+.doc-media-title {
+  margin-top: 1.5rem;
+
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 1rem;
+  color: #505050;
+
+  font-weight: 600;
+  text-align: center;
+}
+
+.doc-image-set-container {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.doc-image-set {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  align-items: center;
+}
+
+.doc-image-set .doc-image {
+  flex: 1;
+  min-width: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.doc-file {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  gap: 20px;
+  width: 50%;
+  margin: 30px 0;
+  padding: 18px 22px;
+
+  background: #fafafa;
+  border: 1px solid #d9d9d9;
+  border-radius: 14px;
+
+  transition: 0.2s;
+}
+
+.doc-file:hover {
+  border-color: #7f8cff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.doc-file-icon {
+  flex-shrink: 0;
+
+  width: 58px;
+  height: 58px;
+
+  border-radius: 12px;
+
+  background: #eef2ff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 30px;
+}
+
+.doc-file-info {
+  flex: 1;
+  min-width: 0;
+  justify-self: left;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.doc-file-info h4 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.doc-file-info p {
+  margin: 6px 0;
+  color: #555;
+}
+
+.doc-file-info span {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.doc-file-button {
+  flex-shrink: 0;
+
+  text-decoration: none;
+
+  padding: 10px 20px;
+
+  border-radius: 8px;
+
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+
+  transition: 0.2s;
+}
+
+.doc-file-button:hover {
+  background: #1d4ed8;
+}
