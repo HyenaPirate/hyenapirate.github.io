@@ -163,11 +163,11 @@
 
 .doc-file {
   display: flex;
-  justify-self: center;
   align-items: center;
   gap: 20px;
+
   width: 50%;
-  margin: 30px 0;
+  margin: 30px auto;
   padding: 18px 22px;
 
   background: #fafafa;
