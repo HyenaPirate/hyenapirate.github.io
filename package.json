@@ -22,7 +22,7 @@
     "oxlint": "^1.71.0",
     "vite": "^8.1.1"
   },
-  "homepage": "https://hyenapirate.github.io/ReactWebsite/",
+  "homepage": "https://HyenaPirate.github.io/",
 "scripts": {
   "dev": "vite",
   "build": "vite build",
