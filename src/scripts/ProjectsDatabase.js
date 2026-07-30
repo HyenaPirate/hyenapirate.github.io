@@ -6,7 +6,7 @@ const ProjectsDatabase = [
     summary:
       "The website you are currently visiting, written from scratch in React.js.",
     tags: ["coding"],
-
+    docPath: "../projectDocs/Website.jsx",
     state: "ongoing",
   },
   {
@@ -15,7 +15,7 @@ const ProjectsDatabase = [
     bannerPath: "/assets/projectsData/podKartonem/Logo1.png",
     summary:
       "Podcast YouTube channel created and hosted in cooperation with Bartłomiej ZGbart Szkudlarski.",
-    tags: ["youtube", "irl", "cooperation", "video", "personal"],
+    tags: ["personal"],
     state: "ongoing",
     hide: true,
   },
@@ -45,7 +45,7 @@ const ProjectsDatabase = [
     title: "Cat Pirates",
     bannerPath: "/assets/projectsData/catPirates/cato.png",
     summary: "Gatos de la cartel.",
-    tags: ["game", "cooperation", "unrealengine", "personal"],
+    tags: ["game", "unrealengine", "personal"],
     state: "canceled",
     hide: true,
   },
@@ -55,17 +55,18 @@ const ProjectsDatabase = [
     bannerPath: "/assets/projectsData/astralPrisoners/icon.png",
     summary:
       "An Unity game made in cooperation with Dawid Błaszczyk for one of engineering classes.",
-    tags: ["university", "game", "unity3D", "cooperation"],
+    tags: ["university", "game", "unity3D"],
     docPath: "../projectDocs/AstralPrisonersDoc.jsx",
     state: "completed",
   },
   {
     id: 6,
     title: "Zero to Mechanic",
-    bannerPath: "/assets/projectsData/golf4/golf1.jpg",
+    bannerPath: "/assets/projectsData/zeroToMechanic/golf1.jpg",
     summary:
-      "A series of mechanical works I made to my car, in order to learn and improve.",
-    tags: ["mechanics", "youtube", "video", "irl"],
+      "A series of mechanical works I made to mine and other's cars, in order to learn and improve.",
+    tags: ["mechanics"],
+    docPath: "../projectDocs/ZeroToMechanic.jsx",
     state: "completed",
   },
   {
@@ -75,6 +76,7 @@ const ProjectsDatabase = [
     summary:
       "A custom setup I made for my parents, consisting of motion activated LED lights, equipped with brightness control and day-night cycle sensors.",
     tags: ["arduino", "coding", "electronics", "print3D"],
+    docPath: "../projectDocs/MotionLedSystem.jsx",
     state: "completed",
   },
   {
@@ -103,14 +105,14 @@ const ProjectsDatabase = [
     id: 11,
     title: "Workstation",
     bannerPath: "/assets/projectsData/workstation/desk1.jpg",
-    tags: ["irl", "personal"],
+    tags: ["personal"],
     state: "ongoing",
   },
   {
     id: 12,
     title: "Zigbee Smart Home Installation",
     bannerPath: "/assets/projectsData/zigbeeSmartHome/devices1.png",
-    tags: ["coding", "electronics", "irl"],
+    tags: ["coding", "electronics"],
     state: "ongoing",
   },
   {
@@ -162,7 +164,7 @@ const ProjectsDatabase = [
     bannerPath: "/assets/projectsData/uzMemory/MemoryMenu_front.png",
     summary:
       "A game of memory made for a teamwork based class, part of my master's degree major in University of Zielona Góra, with appropriate theme, made in Unity3D.",
-    tags: ["university", "game", "unity3D", "cooperation"],
+    tags: ["university", "game", "unity3D"],
     state: "completed",
   },
   {
@@ -171,7 +173,7 @@ const ProjectsDatabase = [
     bannerPath: "/assets/projectsData/uzPoker/Poker_logo_glowing.png",
     summary:
       "A game of poker made for a Unity3D based class, part of my master's degree major in University of Zielona Góra.",
-    tags: ["university", "game", "unity3D", "cooperation"],
+    tags: ["university", "game", "unity3D"],
     state: "completed",
   },
   {

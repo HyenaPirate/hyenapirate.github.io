@@ -10,23 +10,23 @@ function NavBar() {
           icon="/assets/icons/home-svgrepo-com.svg"
         />
         <NavButton
-          to="/Projects"
+          to="/projects"
           label="Projects"
           icon="/assets/icons/cog-svgrepo-com.svg"
         />
         <NavButton
-          to="/Skills"
+          to="/skills"
           label="Skills"
           icon="/assets/icons/hammer-svgrepo-com.svg"
         />
         <NavButton
-          to="/History"
+          to="/history"
           label="History"
           icon="/assets/icons/block-quote-svgrepo-com.svg"
         />
 
         <NavButton
-          to="/Contact"
+          to="/contact"
           label="Contact"
           icon="/assets/icons/envelope-svgrepo-com.svg"
         />

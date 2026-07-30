@@ -30,7 +30,7 @@ function CustomSmartHomeInstallationDoc() {
 
         <p>
           For more indepth project analysis I recommend reading the actual
-          paper, which can be downloaded below, alongside the source files.
+          paper, which can be downloaded below.
         </p>
 
         <DocFile
