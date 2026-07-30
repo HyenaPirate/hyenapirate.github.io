@@ -2,12 +2,36 @@ import "../styles/ProjectsOverlay.css";
 import ErrorImg from "../assets/error.png";
 import Tag from "./Tag";
 import StatesDatabase from "../scripts/StatesDatabase";
+import { useEffect } from "react";
 const docs = import.meta.glob("../projectDocs/*.jsx", {
   eager: true,
   import: "default",
 });
 
 export function ProjectsOverlay({ isOpen, onClose, project }) {
+  useEffect(() => {
+    if (!isOpen) return;
+
+    let closedByBack = false;
+
+    window.history.pushState({ overlay: true }, "");
+
+    const handlePopState = () => {
+      closedByBack = true;
+      onClose();
+    };
+
+    window.addEventListener("popstate", handlePopState);
+
+    return () => {
+      window.removeEventListener("popstate", handlePopState);
+
+      if (!closedByBack) {
+        window.history.back();
+      }
+    };
+  }, [isOpen, onClose]);
+
   if (!isOpen || !project) return null;
 
   const Documentation = getDocumentation(project.docPath);

@@ -9,3 +9,11 @@
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 768px) {
+  .skills-catalog {
+    column-count: 1;
+    width: 95%;
+    padding-left: 80px;
+  }
+}
