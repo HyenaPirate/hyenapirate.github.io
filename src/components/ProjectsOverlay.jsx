@@ -45,7 +45,7 @@ export function ProjectsOverlay({ isOpen, onClose, project }) {
           {Documentation ? (
             <Documentation />
           ) : (
-            <p className="no-documentation">Documentation unavailable.</p>
+            <p className="no-documentation">Documentation coming soon.</p>
           )}
         </div>
       </div>

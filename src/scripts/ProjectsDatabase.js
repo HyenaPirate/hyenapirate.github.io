@@ -22,7 +22,7 @@ const ProjectsDatabase = [
   {
     id: 2,
     title: "Custom Smart Home Installation",
-    bannerPath: "/assets/projectsData/customSmartHomeInstallation/photo1.jpg",
+    bannerPath: "/assets/projectsData/customSmartHomeInstallation/Diagram1.png",
     summary:
       "This is a project I made for my engineering thesis; A Raspberry Pi / Arduino based system, focused on customization and ease of use, complete with a mobile app.",
     tags: ["arduino", "electronics", "coding", "raspberrypi", "university"],
@@ -34,6 +34,8 @@ const ProjectsDatabase = [
     id: 3,
     title: "Universal Zigbee Module",
     bannerPath: "/assets/projectsData/universalZigbeeModule/zigbeeTest.png",
+    summary:
+      "This is a project I made for my master's thesis; An ESP-32 based module, capable of adding Smart Home compatibility to any electronics.",
     tags: ["university", "electronics", "coding"],
     docPath: "../projectDocs/UniversalZigbeeModuleDoc.jsx",
     state: "completed",
@@ -45,6 +47,7 @@ const ProjectsDatabase = [
     summary: "Gatos de la cartel.",
     tags: ["game", "cooperation", "unrealengine", "personal"],
     state: "canceled",
+    hide: true,
   },
   {
     id: 5,
@@ -58,15 +61,19 @@ const ProjectsDatabase = [
   },
   {
     id: 6,
-    title: "Golf4",
+    title: "Zero to Mechanic",
     bannerPath: "/assets/projectsData/golf4/golf1.jpg",
+    summary:
+      "A series of mechanical works I made to my car, in order to learn and improve.",
     tags: ["mechanics", "youtube", "video", "irl"],
     state: "completed",
   },
   {
     id: 7,
-    title: "Automated home LED system",
-    bannerPath: "/assets/projectsData/motionLedSystem/LedyDiagram.jpg",
+    title: "Motion Activated Light System",
+    bannerPath: "/assets/projectsData/motionLedSystem/open1.jpg",
+    summary:
+      "A custom setup I made for my parents, consisting of motion activated LED lights, equipped with brightness control and day-night cycle sensors.",
     tags: ["arduino", "coding", "electronics", "print3D"],
     state: "completed",
   },
@@ -102,7 +109,7 @@ const ProjectsDatabase = [
   {
     id: 12,
     title: "Zigbee Smart Home Installation",
-    bannerPath: "/assets/projectsData/zigbeeSmartHome/neofetch.png",
+    bannerPath: "/assets/projectsData/zigbeeSmartHome/devices1.png",
     tags: ["coding", "electronics", "irl"],
     state: "ongoing",
   },
@@ -116,7 +123,7 @@ const ProjectsDatabase = [
   {
     id: 14,
     title: "Show Bringer",
-    bannerPath: "/assets/projectsData/showBringer/aaaaaa3.jpg",
+    bannerPath: "/assets/projectsData/showBringer/icon.png",
     summary:
       "My first ever Unity project, a small 2D game, with main character being Funtime Foxy from Five Nights at Freddy's franchise, inspired by the screenshot I took years before.",
     tags: ["game", "unity3D", "personal", "coding"],
@@ -134,7 +141,7 @@ const ProjectsDatabase = [
   {
     id: 16,
     title: "Key hanger",
-    bannerPath: "",
+    bannerPath: "/assets/projectsData/printedKeyHanger/keyhanger1.jpg",
     summary:
       "My first 3D printed project; a custom-shaped hanger for house and car keys.",
     tags: ["personal", "print3D"],
@@ -143,7 +150,7 @@ const ProjectsDatabase = [
   {
     id: 17,
     title: "M9 Bayonet display",
-    bannerPath: "",
+    bannerPath: "/assets/projectsData/printedBayonetStand/bayonet.jpg",
     summary:
       "A custom 3D printed bracket that holds a replica of a Counter-Strike knife.",
     tags: ["personal", "print3D"],
@@ -152,7 +159,7 @@ const ProjectsDatabase = [
   {
     id: 18,
     title: "UZ Memory",
-    bannerPath: "",
+    bannerPath: "/assets/projectsData/uzMemory/MemoryMenu_front.png",
     summary:
       "A game of memory made for a teamwork based class, part of my master's degree major in University of Zielona Góra, with appropriate theme, made in Unity3D.",
     tags: ["university", "game", "unity3D", "cooperation"],
@@ -161,7 +168,7 @@ const ProjectsDatabase = [
   {
     id: 19,
     title: "UZ Poker",
-    bannerPath: "",
+    bannerPath: "/assets/projectsData/uzPoker/Poker_logo_glowing.png",
     summary:
       "A game of poker made for a Unity3D based class, part of my master's degree major in University of Zielona Góra.",
     tags: ["university", "game", "unity3D", "cooperation"],
@@ -175,6 +182,7 @@ const ProjectsDatabase = [
       "A piece of softaware deisgned to play imported songs with a visualiser, made for a Unity3D based class, part of my master's degree major in University of Zielona Góra.",
     tags: ["university", "unity3D", "coding"],
     state: "completed",
+    hide: true,
   },
 ];
 

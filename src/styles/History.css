@@ -155,3 +155,67 @@
   text-indent: 30px;
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  .history-main {
+    width: calc(100% - 24px);
+    margin: 16px auto;
+    padding: 16px;
+    gap: 24px;
+    box-sizing: border-box;
+  }
+
+  .history-section {
+    gap: 16px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    letter-spacing: 0;
+    word-spacing: normal;
+  }
+
+  .history-entry {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .entry-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .entry-title {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    word-spacing: normal;
+  }
+
+  .entry-subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 0;
+    word-spacing: normal;
+  }
+
+  .entry-date {
+    align-self: flex-start;
+    font-size: 0.8rem;
+    letter-spacing: 0;
+    word-spacing: normal;
+  }
+
+  .entry-description,
+  .entry-list {
+    font-size: 0.95rem;
+  }
+
+  .education-degree h3 {
+    font-size: 1rem;
+  }
+
+  .education-degree p {
+    text-indent: 0;
+    font-size: 0.95rem;
+  }
+}

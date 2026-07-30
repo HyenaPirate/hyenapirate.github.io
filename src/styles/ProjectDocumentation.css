@@ -241,3 +241,27 @@
 .doc-file-button:hover {
   background: #1d4ed8;
 }
+
+@media (max-width: 600px) {
+  .doc-file {
+    width: 100%;
+    padding: 0;
+  }
+  .doc-file-info h4 {
+    font-size: 1rem;
+  }
+
+  .doc-file-info p {
+    font-size: 0.7rem;
+  }
+
+  .doc-file-button {
+    font-size: 1rem;
+    padding: 20px 4px;
+  }
+  .doc-file-icon {
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+  }
+}
