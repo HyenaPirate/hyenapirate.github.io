@@ -105,3 +105,67 @@ export function DocFile({ src, description, size }) {
     </div>
   );
 }
+
+function getEmbedUrl(url) {
+  try {
+    const parsed = new URL(url);
+
+    // https://youtu.be/VIDEO_ID
+    if (parsed.hostname.includes("youtu.be")) {
+      return `https://www.youtube.com/embed${parsed.pathname}`;
+    }
+
+    // https://www.youtube.com/watch?v=VIDEO_ID
+    if (parsed.searchParams.has("v")) {
+      return `https://www.youtube.com/embed/${parsed.searchParams.get("v")}`;
+    }
+
+    // Already an embed link
+    if (parsed.pathname.startsWith("/embed/")) {
+      return url;
+    }
+  } catch {
+    return url;
+  }
+
+  return url;
+}
+
+export function DocYoutube({ link, title }) {
+  return (
+    <div className="doc-media">
+      <div className="doc-youtube-wrapper">
+        <iframe
+          className="doc-youtube"
+          src={getEmbedUrl(link)}
+          title={title || "YouTube video"}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          loading="lazy"
+        />
+      </div>
+
+      {title && <h3 className="doc-media-title">{title}</h3>}
+    </div>
+  );
+}
+
+export function DocLink({
+  href,
+  text = "Go to GitHub Repository",
+  icon = "/assets/icons/GitHub_Invertocat_White.svg",
+  color = "#24292f",
+}) {
+  return (
+    <a
+      className="doc-link"
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ backgroundColor: color }}
+    >
+      <img className="github-icon" src={icon} alt="" />
+      {text} ↗
+    </a>
+  );
+}

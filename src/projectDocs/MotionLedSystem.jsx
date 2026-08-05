@@ -8,7 +8,7 @@ import {
   DocFile,
 } from "../components/ProjectDocumentation";
 
-function MotionLedSystem() {
+function MotionLedSystemDoc() {
   return (
     <>
       <DocChapter title="Introduction">
@@ -80,4 +80,4 @@ function MotionLedSystem() {
     </>
   );
 }
-export default MotionLedSystem;
+export default MotionLedSystemDoc;

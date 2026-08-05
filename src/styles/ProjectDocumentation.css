@@ -37,6 +37,27 @@
   padding-right: 5%;
 }
 
+.chapter-text h1 {
+  font-size: 1.6rem;
+  text-indent: 0em;
+  margin: 0 0 1rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-style: italic;
+}
+
+.chapter-text .doc-text-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.chapter-text .doc-text-link:hover {
+  color: #61dafb;
+  text-decoration: underline;
+}
+
 .doc-element {
   width: 80%;
   margin: 2rem auto;
@@ -242,6 +263,58 @@
   background: #1d4ed8;
 }
 
+.doc-youtube-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #000;
+  aspect-ratio: 16 / 9;
+}
+
+.doc-youtube {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.doc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: fit-content;
+  margin: 30px auto;
+  padding: 14px 28px;
+
+  color: white;
+
+  border-radius: 8px;
+  border: 2px solid transparent;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.github-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.doc-link:hover {
+  background-color: #333b44;
+  border-color: #61dafb;
+  transform: translateY(-2px);
+}
+
 @media (max-width: 600px) {
   .doc-file {
     width: 100%;
@@ -263,5 +336,12 @@
     height: 30px;
     width: 30px;
     font-size: 20px;
+  }
+
+  .doc-link {
+    width: calc(100% - 40px);
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 1rem;
   }
 }

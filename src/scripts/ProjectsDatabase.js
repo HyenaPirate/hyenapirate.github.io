@@ -129,6 +129,7 @@ const ProjectsDatabase = [
     summary:
       "My first ever Unity project, a small 2D game, with main character being Funtime Foxy from Five Nights at Freddy's franchise, inspired by the screenshot I took years before.",
     tags: ["game", "unity3D", "personal", "coding"],
+    docPath: "../projectDocs/ShowBringerDoc.jsx",
     state: "canceled",
   },
   {
@@ -138,6 +139,7 @@ const ProjectsDatabase = [
     summary:
       "A self designed, modeled, printed and assembled scaled model of an V8 engine, running on a small DC motor.",
     tags: ["personal", "mechanics", "print3D"],
+    docPath: "../projectDocs/PrintedV8Doc.jsx",
     state: "completed",
   },
   {
