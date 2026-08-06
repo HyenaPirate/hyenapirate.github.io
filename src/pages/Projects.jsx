@@ -4,11 +4,13 @@ import "../styles/Projects.css";
 import { useEffect, useState } from "react";
 import { ProjectsOverlay } from "../components/ProjectsOverlay";
 import TagsDatabase from "../scripts/TagsDatabase";
+import { useLocation } from "react-router-dom";
 
 function Projects() {
   const [displayedProject, setDisplayedProject] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedTags, setSelectedTags] = useState([]);
+  const location = useLocation();
 
   useEffect(() => {
     document.body.style.overflow = displayedProject ? "hidden" : "auto";
@@ -17,6 +19,21 @@ function Projects() {
       document.body.style.overflow = "auto";
     };
   }, [displayedProject]);
+
+  useEffect(() => {
+    const id = location.state?.openProjectId;
+
+    if (id === undefined) return;
+
+    const project = ProjectsDatabase.find((p) => p.id === id);
+
+    if (project) {
+      setDisplayedProject(project);
+    }
+
+    // Clear the state so refreshing doesn't reopen it.
+    window.history.replaceState({}, "");
+  }, [location.state]);
 
   function toggleTag(tag) {
     setSelectedTags((prev) =>

@@ -1,24 +1,30 @@
 import "../styles/NavBar.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
 function NavBar() {
   return (
     <nav className="navbar">
+      <div className="navbar-name">mgr inż. Mateusz Banaszkiewicz</div>
+
       <div className="navbar-buttons-wrapper">
         <NavButton
           to="/"
           label="Home"
           icon="/assets/icons/home-svgrepo-com.svg"
         />
+
         <NavButton
           to="/projects"
           label="Projects"
           icon="/assets/icons/cog-svgrepo-com.svg"
         />
+
         <NavButton
           to="/skills"
           label="Skills"
           icon="/assets/icons/hammer-svgrepo-com.svg"
         />
+
         <NavButton
           to="/history"
           label="History"
@@ -37,10 +43,16 @@ function NavBar() {
 
 function NavButton({ to, label, icon }) {
   return (
-    <Link className="navButton" to={to}>
-      <img className="navButton-icon" src={icon} />
-      <h1 className="navButton-label">{label}</h1>
-    </Link>
+    <NavLink
+      to={to}
+      end={to === "/"}
+      className={({ isActive }) =>
+        isActive ? "navButton active" : "navButton"
+      }
+    >
+      <img className="navButton-icon" src={icon} alt="" />
+      <span className="navButton-label">{label}</span>
+    </NavLink>
   );
 }
 

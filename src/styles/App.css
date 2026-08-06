@@ -12,9 +12,29 @@ body,
 .AppDiv {
   height: 100vh;
   width: 100vw;
+
   background-repeat: repeat;
+  background-size: auto;
+
   overflow: hidden;
   padding-top: 10px;
+
+  position: relative;
+}
+
+.AppDiv::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  pointer-events: none;
+}
+
+.AppDiv > * {
+  position: relative;
+  z-index: 1;
 }
 
 .navbar {

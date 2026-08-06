@@ -64,8 +64,12 @@ export default function Contact() {
               LinkedIn
             </a>
 
-            <a href="/assets/files/CV_Mateusz_Banaszkiewicz.pdf" download>
-              Download CV
+            <a
+              href="/assets/files/CV_Mateusz_Banaszkiewicz_QR.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download my Resume
             </a>
           </div>
         </ContactCard>
