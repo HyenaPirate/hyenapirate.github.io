@@ -343,12 +343,15 @@
     font-size: 1rem;
   }
 
-  .primary-button,
-  .secondary-button {
+  .hero-buttons {
     width: 100%;
+    align-items: center;
   }
 
-  .hero-buttons {
-    flex-direction: column;
+  .primary-button,
+  .secondary-button {
+    width: 90%;
+    text-align: center;
+    box-sizing: border-box;
   }
 }
