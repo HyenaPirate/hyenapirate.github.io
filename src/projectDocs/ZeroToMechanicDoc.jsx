@@ -8,7 +8,7 @@ import {
   DocFile,
 } from "../components/ProjectDocumentation";
 
-function ZeroToMechanic() {
+function ZeroToMechanicDoc() {
   return (
     <>
       <DocChapter title="Introduction">
@@ -57,6 +57,7 @@ function ZeroToMechanic() {
             ground (body).
           </li>
           <li>Touched-up paint job in spots of minor scratches.</li>
+          <li>Cut out the catalytic converter.</li>
         </ul>
 
         <h3>Jobs I have done to my dad's Opel Insygnia:</h3>
@@ -76,4 +77,4 @@ function ZeroToMechanic() {
   );
 }
 
-export default ZeroToMechanic;
+export default ZeroToMechanicDoc;

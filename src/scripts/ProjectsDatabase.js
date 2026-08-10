@@ -6,7 +6,7 @@ const ProjectsDatabase = [
     summary:
       "The website you are currently visiting, written from scratch in React.js.",
     tags: ["coding"],
-    docPath: "../projectDocs/Website.jsx",
+    docPath: "../projectDocs/WebsiteDoc.jsx",
     state: "ongoing",
   },
   {
@@ -25,7 +25,14 @@ const ProjectsDatabase = [
     bannerPath: "/assets/projectsData/customSmartHomeInstallation/Diagram1.png",
     summary:
       "This is a project I made for my engineering thesis; A Raspberry Pi / Arduino based system, focused on customization and ease of use, complete with a mobile app.",
-    tags: ["arduino", "electronics", "coding", "raspberrypi", "university"],
+    tags: [
+      "arduino",
+      "electronics",
+      "coding",
+      "raspberrypi",
+      "university",
+      "android",
+    ],
     docPath: "../projectDocs/CustomSmartHomeInstallationDoc.jsx",
 
     state: "completed",
@@ -43,11 +50,11 @@ const ProjectsDatabase = [
   {
     id: 4,
     title: "Cat Pirates",
-    bannerPath: "/assets/projectsData/catPirates/cato.png",
+    bannerPath: "/assets/projectsData/catPirates/ue_logo.webp",
     summary: "Gatos de la cartel.",
     tags: ["game", "unrealengine", "personal"],
+    docPath: "../projectDocs/CatPiratesDoc.jsx",
     state: "canceled",
-    hide: true,
   },
   {
     id: 5,
@@ -66,7 +73,7 @@ const ProjectsDatabase = [
     summary:
       "A series of mechanical works I made to mine and other's cars, in order to learn and improve.",
     tags: ["mechanics"],
-    docPath: "../projectDocs/ZeroToMechanic.jsx",
+    docPath: "../projectDocs/ZeroToMechanicDoc.jsx",
     state: "completed",
   },
   {
@@ -76,7 +83,7 @@ const ProjectsDatabase = [
     summary:
       "A custom setup I made for my parents, consisting of motion activated LED lights, equipped with brightness control and day-night cycle sensors.",
     tags: ["arduino", "coding", "electronics", "print3D"],
-    docPath: "../projectDocs/MotionLedSystem.jsx",
+    docPath: "../projectDocs/MotionLedSystemDoc.jsx",
     state: "completed",
   },
   {
@@ -84,28 +91,33 @@ const ProjectsDatabase = [
     title: "LED shelves",
     bannerPath: "/assets/projectsData/roomLedShelves/photo2.jpg",
     tags: ["arduino", "coding", "electronics"],
+    docPath: "../projectDocs/RoomLedShelvesDoc.jsx",
     state: "suspended",
   },
   {
     id: 9,
-    title: "MCC - *classified*",
-    bannerPath: "/assets/projectsData/mcc/mcc1.png",
+    title: "MCC",
+    bannerPath: "/assets/projectsData/mcc/ss1.png",
     tags: ["electronics", "mechanics", "personal", "coding"],
     state: "planned",
-    hide: true,
+    docPath: "../projectDocs/MCCDoc.jsx",
   },
   {
     id: 10,
     title: "Smart Home Central Unit",
-    bannerPath: "/assets/projectsData/smarthomeCentralUnit/photo1.png",
+    bannerPath: "/assets/projectsData/smarthomeCentralUnit/photo2.png",
     tags: ["personal", "raspberrypi", "coding", "electronics", "print3D"],
-    state: "ongoing",
+    docPath: "../projectDocs/SmartHomeCentralUnitDoc.jsx",
+    summary:
+      "A self designed and assembled laptop-like device, meant to serve as a Master Unit for my local Smart Home, with field-operational esthetic.",
+    state: "suspended",
   },
   {
     id: 11,
     title: "Workstation",
     bannerPath: "/assets/projectsData/workstation/desk1.jpg",
     tags: ["personal"],
+    docPath: "../projectDocs/WorkstationDoc.jsx",
     state: "ongoing",
   },
   {
@@ -113,6 +125,7 @@ const ProjectsDatabase = [
     title: "Zigbee Smart Home Installation",
     bannerPath: "/assets/projectsData/zigbeeSmartHome/devices1.png",
     tags: ["coding", "electronics"],
+    docPath: "../projectDocs/ZigbeeSmartHomeDoc.jsx",
     state: "ongoing",
   },
   {
@@ -120,6 +133,7 @@ const ProjectsDatabase = [
     title: "Customized Gasmask",
     bannerPath: "/assets/projectsData/gasmask/ss1.png",
     tags: ["personal", "print3D"],
+    docPath: "../projectDocs/GasMaskDoc.jsx",
     state: "suspended",
   },
   {
@@ -149,6 +163,7 @@ const ProjectsDatabase = [
     summary:
       "My first 3D printed project; a custom-shaped hanger for house and car keys.",
     tags: ["personal", "print3D"],
+    docPath: "../projectDocs/PrintedKeyHangerDoc.jsx",
     state: "completed",
   },
   {
@@ -158,15 +173,17 @@ const ProjectsDatabase = [
     summary:
       "A custom 3D printed bracket that holds a replica of a Counter-Strike knife.",
     tags: ["personal", "print3D"],
+    docPath: "../projectDocs/PrintedBayonetStandDoc.jsx",
     state: "completed",
   },
   {
     id: 18,
     title: "UZ Memory",
-    bannerPath: "/assets/projectsData/uzMemory/MemoryMenu_front.png",
+    bannerPath: "/assets/projectsData/uzMemory/ssMenu.png",
     summary:
       "A game of memory made for a teamwork based class, part of my master's degree major in University of Zielona Góra, with appropriate theme, made in Unity3D.",
     tags: ["university", "game", "unity3D"],
+    docPath: "../projectDocs/UzMemoryDoc.jsx",
     state: "completed",
   },
   {
@@ -176,17 +193,38 @@ const ProjectsDatabase = [
     summary:
       "A game of poker made for a Unity3D based class, part of my master's degree major in University of Zielona Góra.",
     tags: ["university", "game", "unity3D"],
+    docPath: "../projectDocs/UzPokerDoc.jsx",
     state: "completed",
   },
   {
     id: 20,
     title: "Music player",
-    bannerPath: "",
+    bannerPath: "/assets/projectsData/musicPlayer/unity_logo.jpg",
     summary:
       "A piece of softaware deisgned to play imported songs with a visualiser, made for a Unity3D based class, part of my master's degree major in University of Zielona Góra.",
     tags: ["university", "unity3D", "coding"],
+    docPath: "../projectDocs/MusicPlayerDoc.jsx",
     state: "completed",
-    hide: true,
+  },
+  {
+    id: 21,
+    title: "SkyCam",
+    bannerPath: "/assets/projectsData/skyCam/pic2.png",
+    summary:
+      "An Arduino scale recreation of an over-field camera system used at stadiums and arenas.",
+    tags: ["university", "arduino", "electronics", "mechanical", "coding"],
+    docPath: "../projectDocs/SkyCamDoc.jsx",
+    state: "completed",
+  },
+  {
+    id: 22,
+    title: "Protein Manager",
+    bannerPath: "/assets/projectsData/proteinManager/android_logo.svg",
+    summary:
+      "An app to track an intake of protein, callories etc., made as an university project",
+    tags: ["university", "coding", "android"],
+    docPath: "../projectDocs/ProteinManagerDoc.jsx",
+    state: "completed",
   },
 ];
 

@@ -86,7 +86,9 @@ body,
 }
 
 .tag-search-block {
-  width: 80%;
+  display: flex;
+  width: 90%;
+  justify-content: center;
 }
 
 .tag-button {

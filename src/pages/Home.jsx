@@ -149,12 +149,12 @@ function Home() {
 
       <section className="stats-section">
         <div className="stat-card">
-          <h2>15+</h2>
+          <h2>20+</h2>
           <p>Projects</p>
         </div>
 
         <div className="stat-card">
-          <h2>5+</h2>
+          <h2>10+</h2>
           <p>Years Programming</p>
         </div>
 

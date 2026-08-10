@@ -43,6 +43,10 @@ const TagsDatabase = {
     label: "3D printing",
     color: "#777777",
   },
+  android: {
+    label: "Android",
+    color: "#2f9017",
+  },
 };
 
 export default TagsDatabase;

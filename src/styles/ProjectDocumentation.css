@@ -144,7 +144,6 @@
 
 .doc-image,
 .doc-video {
-  max-width: 100%;
   height: auto;
   outline: 7px outset rgba(127, 135, 147, 0.7);
   outline-offset: 0px;

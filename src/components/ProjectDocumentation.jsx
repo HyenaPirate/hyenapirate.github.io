@@ -1,7 +1,7 @@
 import "../styles/ProjectDocumentation.css";
 import ErrorImg from "../assets/error.png";
 
-export function DocImage({ src, title }) {
+export function DocImage({ src, title, size = "100%" }) {
   return (
     <div className="doc-media">
       <img
@@ -11,6 +11,7 @@ export function DocImage({ src, title }) {
           e.currentTarget.src = ErrorImg;
         }}
         alt={title}
+        style={{ maxWidth: size }}
       />
       {title && <h3 className="doc-media-title">{title}</h3>}
     </div>

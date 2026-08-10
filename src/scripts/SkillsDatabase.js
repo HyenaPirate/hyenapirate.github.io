@@ -5,19 +5,11 @@ const SkillsDatabase = [
   },
   {
     title: "Frameworks & Libraries",
-    skills: ["React", "ESP-IDF", "Arduino", "Unity3D", "Unreal Enigne", ".NET"],
+    skills: ["React", "ESP-IDF", "Unity3D", "Unreal Enigne", ".NET"],
   },
   {
     title: "Embedded Systems",
-    skills: [
-      "ESP32",
-      "Microcontroller Programming",
-      "UART",
-      "SPI",
-      "I²C",
-      "GPIO",
-      "PWM",
-    ],
+    skills: ["Arduino", "Raspbery Pi", "ESP32"],
   },
   {
     title: "IoT & Smart Home",
@@ -43,6 +35,7 @@ const SkillsDatabase = [
   {
     title: "Operating Systems & Tools",
     skills: [
+      "Windows (7-11)",
       "Linux",
       "Docker",
       "Visual Studio",
@@ -58,7 +51,7 @@ const SkillsDatabase = [
       "PCB Prototyping",
       "Circuit Design",
       "Multimeter usage",
-      "Power Supply Operation",
+      "Power Supply usage",
     ],
   },
   {
@@ -68,7 +61,6 @@ const SkillsDatabase = [
       "System Testing",
       "Hardware Debugging",
       "Performance Analysis",
-      "Research",
     ],
   },
   {
@@ -79,6 +71,8 @@ const SkillsDatabase = [
       "Problem Solving",
       "Teamwork",
       "Driver's Licence (8 years)",
+      "Quality Research",
+      "Efficient AI assisted programming",
     ],
   },
 ];

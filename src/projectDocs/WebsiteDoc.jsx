@@ -8,7 +8,7 @@ import {
   DocFile,
 } from "../components/ProjectDocumentation";
 
-function Website() {
+function WebsiteDoc() {
   return (
     <>
       <DocChapter title="Introduction">
@@ -43,4 +43,4 @@ function Website() {
   );
 }
 
-export default Website;
+export default WebsiteDoc;

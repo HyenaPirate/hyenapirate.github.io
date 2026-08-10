@@ -25,12 +25,6 @@ function History() {
         />
 
         <HistoryEntry
-          title="IV Liceum Ogólnokształcące w Zielonej Górze “Lotnik”"
-          subtitle="Technical profile (mechanics/electronics)"
-          date="2016.09 - 2019.06"
-        />
-
-        <HistoryEntry
           title="University of Zielona Góra"
           date="2020.10 - 2025.07"
         >
@@ -73,7 +67,7 @@ function History() {
         <HistoryEntry
           title="Self-employed"
           subtitle="Bucks For Bucks Mateusz Banaszkiewicz"
-          date="2024.02 - 2025.07"
+          date="2024.02 - 2025.12"
           description="Ran an online shop selling animal bones and pelts."
         >
           <ul>
@@ -88,7 +82,7 @@ function History() {
         <HistoryEntry
           title="Internship"
           subtitle="Helper in a Computer shop."
-          date="2024.02 - 2025.07"
+          date="2022.08 - 2022.09"
           description="Worked at Computer Partner Waldemar
           Łobaczewski Bohaterów Westerplatte 11/1A/2, 65-001 Zielona Góra."
         >
