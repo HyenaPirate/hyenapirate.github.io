@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "tag": "Engineer • Developer • Maker",
+    "title1": "Building ideas",
+    "title2": "into real",
+    "title3": "solutions.",
+    "description": "I enjoy creating things — from software and embedded systems to mechanical designs and 3D printed projects. I like exploring new technologies, solving problems and turning ideas into working solutions.",
+    "description2": "My projects combine programming, electronics, engineering and creativity, whether it's developing applications, designing hardware, modifying machines or simply learning something new.",
+    "viewProjects": "View Projects",
+    "contact": "Contact Me",
+    "reroll": "Not seeing what you're looking for? Try again!",
+    "allSkills": "Or view all my skills here."
+  },
+
+  "stats": {
+    "projects": "Projects",
+    "programming": "Years Programming",
+    "technologies": "Technologies",
+    "ambition": "Ambition"
+  },
+
+  "featured": {
+    "title": "Featured Projects",
+    "readMore": "Read more →"
+  },
+
+  "about": {
+    "title": "About Me",
+    "paragraph1": "I have always enjoyed understanding how things work and finding ways to improve or create them. My interests range from software development and embedded systems to mechanical design, 3D printing and hands-on engineering.",
+    "paragraph2": "I enjoy the entire process of making something — from an initial idea, through designing and experimenting, to building a final working result. Whether it is writing code, designing a part, repairing a machine or learning a new technology, I like challenges that allow me to grow and create something useful."
+  },
+
+  "cta": {
+    "title": "Interested in working together? Have an idea to build?",
+    "description": "I'm always interested in projects involving software, engineering, automation, design and creative problem solving.",
+    "button": "Get in Touch"
+  }
+}

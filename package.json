@@ -11,8 +11,11 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "i18next": "^26.4.0",
+    "i18next-browser-languagedetector": "^8.2.1",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
+    "react-i18next": "^17.0.12",
     "react-router-dom": "^7.18.1"
   },
   "devDependencies": {
@@ -23,6 +26,5 @@
     "oxlint": "^1.71.0",
     "vite": "^8.1.1"
   },
-  "homepage": "https://HyenaPirate.github.io/"  
+  "homepage": "https://HyenaPirate.github.io/"
 }
-

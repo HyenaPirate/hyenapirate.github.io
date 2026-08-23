@@ -6,6 +6,7 @@ import dice_hover from "../assets/dice_hover.gif";
 import dice_rolling from "../assets/dice_rolling.gif";
 import { useState, useRef } from "react";
 import SkillsDatabase from "../scripts/SkillsDatabase";
+import { useTranslation } from "react-i18next";
 
 const featuredProjects = [0, 3, 15];
 
@@ -20,6 +21,8 @@ const getRandomSkills = (count = 8) => {
 };
 
 function Home() {
+  const { t } = useTranslation("home");
+
   const [skills, setSkills] = useState(() => getRandomSkills());
   const diceHoveredRef = useRef(false);
   const [skillsVisible, setSkillsVisible] = useState(true);
@@ -46,44 +49,41 @@ function Home() {
         setDiceState("idle");
       }
     }, 1200);
+
     setTimeout(() => {
       setDiceState(diceHoveredRef.current ? "hover" : "idle");
     }, 1200);
   };
+
   return (
     <div className="home-page">
       {/* HERO */}
       <section className="hero-section">
         <div className="hero-text">
-          <p className="hero-tag">Engineer • Developer • Maker</p>
+          <p className="hero-tag">{t("hero.tag")}</p>
 
           <h1>
-            Building ideas
+            {t("hero.title1")}
             <br />
-            into real
+            {t("hero.title2")}
             <br />
-            solutions.
+            {t("hero.title3")}
           </h1>
 
           <p className="hero-description">
-            I enjoy creating things — from software and embedded systems to
-            mechanical designs and 3D printed projects. I like exploring new
-            technologies, solving problems and turning ideas into working
-            solutions.
+            {t("hero.description")}
             <br />
             <br />
-            My projects combine programming, electronics, engineering and
-            creativity, whether it's developing applications, designing
-            hardware, modifying machines or simply learning something new.
+            {t("hero.description2")}
           </p>
 
           <div className="hero-buttons">
             <Link className="primary-button" to="/Projects">
-              View Projects
+              {t("hero.viewProjects")}
             </Link>
 
             <Link className="secondary-button" to="/Contact">
-              Contact Me
+              {t("hero.contact")}
             </Link>
           </div>
 
@@ -102,7 +102,7 @@ function Home() {
 
           <div className="skills-reroll-wrapper">
             <div className="reroll-row">
-              <h3>Not seeing what you're looking for? Try again! →</h3>
+              <h3>{t("hero.reroll")} →</h3>
 
               <button
                 onMouseEnter={() => {
@@ -129,13 +129,13 @@ function Home() {
                         ? dice_hover
                         : dice_idle
                   }
-                  alt="Reroll skills"
+                  alt={t("hero.reroll")}
                 />
               </button>
             </div>
 
             <Link className="all-skills-link" to="/Skills">
-              Or view all my skills here.
+              {t("hero.allSkills")}
             </Link>
           </div>
         </div>
@@ -146,33 +146,31 @@ function Home() {
       </section>
 
       {/* STATS */}
-
       <section className="stats-section">
         <div className="stat-card">
           <h2>20+</h2>
-          <p>Projects</p>
+          <p>{t("stats.projects")}</p>
         </div>
 
         <div className="stat-card">
           <h2>10+</h2>
-          <p>Years Programming</p>
+          <p>{t("stats.programming")}</p>
         </div>
 
         <div className="stat-card">
           <h2>20+</h2>
-          <p>Technologies</p>
+          <p>{t("stats.technologies")}</p>
         </div>
 
         <div className="stat-card">
           <h2>100%</h2>
-          <p>Ambition</p>
+          <p>{t("stats.ambition")}</p>
         </div>
       </section>
 
       {/* FEATURED */}
-
       <section className="featured-section">
-        <h2>Featured Projects</h2>
+        <h2>{t("featured.title")}</h2>
 
         <div className="featured-grid">
           {featuredProjects.map((id) => {
@@ -182,13 +180,14 @@ function Home() {
 
             return (
               <Link
+                key={project.id}
                 to="/Projects"
                 state={{ openProjectId: project.id }}
                 className="project-card"
               >
                 <h3>{project.title}</h3>
                 <p>{project.summary}</p>
-                <span>Read more →</span>
+                <span>{t("featured.readMore")}</span>
               </Link>
             );
           })}
@@ -196,36 +195,25 @@ function Home() {
       </section>
 
       {/* ABOUT */}
-
       <section className="about-section">
-        <h2>About Me</h2>
+        <h2>{t("about.title")}</h2>
 
         <p>
-          I have always enjoyed understanding how things work and finding ways
-          to improve or create them. My interests range from software
-          development and embedded systems to mechanical design, 3D printing and
-          hands-on engineering.
+          {t("about.paragraph1")}
           <br />
-          <br />I enjoy the entire process of making something — from an initial
-          idea, through designing and experimenting, to building a final working
-          result. Whether it is writing code, designing a part, repairing a
-          machine or learning a new technology, I like challenges that allow me
-          to grow and create something useful.
+          <br />
+          {t("about.paragraph2")}
         </p>
       </section>
 
       {/* CTA */}
-
       <section className="cta-section">
-        <h2>Interested in working together? Have an idea to build?</h2>
+        <h2>{t("cta.title")}</h2>
 
-        <p style={{ color: "white" }}>
-          I'm always interested in projects involving software, engineering,
-          automation, design and creative problem solving.
-        </p>
+        <p style={{ color: "white" }}>{t("cta.description")}</p>
 
         <Link className="primary-button" to="/Contact">
-          Get in Touch
+          {t("cta.button")}
         </Link>
       </section>
     </div>

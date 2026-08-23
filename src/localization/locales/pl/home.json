@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "tag": "Inżynier • Programista • Twórca",
+    "title1": "Zamieniam pomysły",
+    "title2": "w prawdziwe",
+    "title3": "rozwiązania.",
+    "description": "Lubię tworzyć różne rzeczy — od oprogramowania i systemów wbudowanych po projekty mechaniczne i wydruki 3D. Lubię poznawać nowe technologie, rozwiązywać problemy i zamieniać pomysły w działające rozwiązania.",
+    "description2": "Moje projekty łączą programowanie, elektronikę, inżynierię i kreatywność — niezależnie od tego, czy tworzę aplikacje, projektuję sprzęt, modyfikuję maszyny, czy po prostu uczę się czegoś nowego.",
+    "viewProjects": "Zobacz projekty",
+    "contact": "Skontaktuj się ze mną",
+    "reroll": "Nie widzisz tego, czego szukasz? Spróbuj ponownie!",
+    "allSkills": "Lub zobacz wszystkie moje umiejętności tutaj."
+  },
+
+  "stats": {
+    "projects": "Projektów",
+    "programming": "Lat programowania",
+    "technologies": "Technologii",
+    "ambition": "Ambicji"
+  },
+
+  "featured": {
+    "title": "Wybrane projekty",
+    "readMore": "Czytaj więcej →"
+  },
+
+  "about": {
+    "title": "O mnie",
+    "paragraph1": "Od zawsze lubiłem rozumieć, jak działają różne rzeczy, oraz szukać sposobów na ich ulepszanie lub tworzenie od podstaw. Interesuję się między innymi tworzeniem oprogramowania, systemami wbudowanymi, projektowaniem mechanicznym, drukiem 3D oraz praktyczną inżynierią.",
+    "paragraph2": "Lubię cały proces tworzenia czegoś — od początkowego pomysłu, przez projektowanie i eksperymentowanie, aż po stworzenie działającego rozwiązania. Niezależnie od tego, czy piszę kod, projektuję element, naprawiam maszynę, czy uczę się nowej technologii, lubię wyzwania, które pozwalają mi się rozwijać i tworzyć coś użytecznego."
+  },
+
+  "cta": {
+    "title": "Chcesz współpracować? Masz pomysł, który chcesz zrealizować?",
+    "description": "Zawsze interesują mnie projekty związane z oprogramowaniem, inżynierią, automatyką, projektowaniem oraz kreatywnym rozwiązywaniem problemów.",
+    "button": "Skontaktuj się"
+  }
+}

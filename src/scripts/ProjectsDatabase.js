@@ -212,7 +212,7 @@ const ProjectsDatabase = [
     bannerPath: "/assets/projectsData/skyCam/pic2.png",
     summary:
       "An Arduino scale recreation of an over-field camera system used at stadiums and arenas.",
-    tags: ["university", "arduino", "electronics", "mechanical", "coding"],
+    tags: ["university", "arduino", "electronics", "mechanics", "coding"],
     docPath: "../projectDocs/SkyCamDoc.jsx",
     state: "completed",
   },
@@ -225,6 +225,16 @@ const ProjectsDatabase = [
     tags: ["university", "coding", "android"],
     docPath: "../projectDocs/ProteinManagerDoc.jsx",
     state: "completed",
+  },
+  {
+    id: 22,
+    title: "Genetic Algorithm",
+    bannerPath:
+      "/assets/projectsData/geneticAlgorithm/Screenshot 2026-08-20 125443.png",
+    summary: "A java implementation of a genetic algorithm.",
+    tags: ["coding", "personal"],
+    docPath: "../projectDocs/GeneticAlgorithmDoc.jsx",
+    state: "ongoing",
   },
 ];
 

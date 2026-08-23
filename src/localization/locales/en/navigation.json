@@ -1,0 +1,9 @@
+{
+  "button": {
+    "home": "Home",
+    "projects": "Projects",
+    "skills": "Skills",
+    "history": "History",
+    "contact": "Contact"
+  }
+}

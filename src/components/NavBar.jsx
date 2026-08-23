@@ -1,7 +1,9 @@
 import "../styles/NavBar.css";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function NavBar() {
+  const { t } = useTranslation("navigation");
   return (
     <nav className="navbar">
       <div className="navbar-name">mgr inż. Mateusz Banaszkiewicz</div>
@@ -9,31 +11,31 @@ function NavBar() {
       <div className="navbar-buttons-wrapper">
         <NavButton
           to="/"
-          label="Home"
+          label={t("button.home")}
           icon="/assets/icons/home-svgrepo-com.svg"
         />
 
         <NavButton
           to="/projects"
-          label="Projects"
+          label={t("button.projects")}
           icon="/assets/icons/cog-svgrepo-com.svg"
         />
 
         <NavButton
           to="/skills"
-          label="Skills"
+          label={t("button.skills")}
           icon="/assets/icons/hammer-svgrepo-com.svg"
         />
 
         <NavButton
           to="/history"
-          label="History"
+          label={t("button.history")}
           icon="/assets/icons/block-quote-svgrepo-com.svg"
         />
 
         <NavButton
           to="/contact"
-          label="Contact"
+          label={t("button.contact")}
           icon="/assets/icons/envelope-svgrepo-com.svg"
         />
       </div>
