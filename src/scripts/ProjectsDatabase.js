@@ -233,6 +233,15 @@ const ProjectsDatabase = [
     summary: "A java implementation of a genetic algorithm.",
     tags: ["coding", "personal"],
     docPath: "../projectDocs/GeneticAlgorithmDoc.jsx",
+    state: "suspended",
+  },
+  {
+    id: 24,
+    title: "Home Server Manager",
+    bannerPath: "/assets/projectsData/homeServerManager/spring-2.svg",
+    summary: "Spring Boot backend app for maintaining a smarthome server.",
+    tags: ["coding", "personal"],
+    docPath: "../projectDocs/HomeServerManager.jsx",
     state: "ongoing",
   },
 ];

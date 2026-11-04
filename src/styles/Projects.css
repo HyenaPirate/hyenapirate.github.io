@@ -125,7 +125,20 @@ body,
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1440px) {
+  .search-bar {
+    width: 50%;
+  }
+  .tag-search-block {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 768px) {
   .search-bar {
     width: 90%;
   }
@@ -133,8 +146,6 @@ body,
   .tag-button {
     font-size: 10px;
     padding: 4px 7px;
-  }
-  .tag-search-block {
-    width: 90%;
+    margin: 0;
   }
 }
