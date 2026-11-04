@@ -227,10 +227,9 @@ const ProjectsDatabase = [
     state: "completed",
   },
   {
-    id: 22,
+    id: 23,
     title: "Genetic Algorithm",
-    bannerPath:
-      "/assets/projectsData/geneticAlgorithm/Screenshot 2026-08-20 125443.png",
+    bannerPath: "/assets/projectsData/geneticAlgorithm/ss11.png",
     summary: "A java implementation of a genetic algorithm.",
     tags: ["coding", "personal"],
     docPath: "../projectDocs/GeneticAlgorithmDoc.jsx",
