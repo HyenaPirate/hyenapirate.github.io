@@ -1,11 +1,40 @@
 const SkillsDatabase = [
   {
     title: "Programming Languages",
-    skills: ["C", "C++", "C#", "Python", "Java", "JavaScript", "HTML", "CSS"],
+    skills: [
+      "C",
+      "C++",
+      "C#",
+      "Python",
+      "Java",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "SQL",
+    ],
   },
   {
     title: "Frameworks & Libraries",
-    skills: ["React", "ESP-IDF", "Unity3D", "Unreal Enigne", ".NET"],
+    skills: [
+      "React.js",
+      "ESP-IDF",
+      "Unity3D",
+      "Unreal Enigne",
+      ".NET",
+      "Spring (Spring Boot)",
+    ],
+  },
+  {
+    title: "Databases",
+    skills: [
+      "MySQL",
+      "postgreSQL",
+      "MongoDB",
+      "Neo4j",
+      "Cassandra",
+      "Redis",
+      "Microsoft Excel",
+    ],
   },
   {
     title: "Embedded Systems",

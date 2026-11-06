@@ -1,6 +1,7 @@
 import "../styles/ProjectCard.css";
 import ErrorImg from "../assets/error.png";
 import TagsDatabase from "../scripts/TagsDatabase";
+import AutoFitText from "../scripts/AutoFitText";
 
 function ProjectCard({ project, onClick }) {
   return (
@@ -13,7 +14,10 @@ function ProjectCard({ project, onClick }) {
         }}
         alt={project.title}
       />
-      <div className="projectTitle">{project.title}</div>
+      <div className="projectTitle">
+        {" "}
+        <AutoFitText>{project.title}</AutoFitText>
+      </div>
       <div className="tag-list">
         {project.tags?.map((tag) => (
           <CardTag key={tag} tag={tag} />

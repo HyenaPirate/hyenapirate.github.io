@@ -241,7 +241,16 @@ const ProjectsDatabase = [
     bannerPath: "/assets/projectsData/homeServerManager/spring-2.svg",
     summary: "Spring Boot backend app for maintaining a smarthome server.",
     tags: ["coding", "personal"],
-    docPath: "../projectDocs/HomeServerManager.jsx",
+    docPath: "../projectDocs/HomeServerManagerDoc.jsx",
+    state: "ongoing",
+  },
+  {
+    id: 25,
+    title: "E-paper SmartHome Dashboard",
+    bannerPath: "/assets/projectsData/epaperDashboard/ss4.png",
+    summary: "A custom dashboard with Home Assistant integration.",
+    tags: ["coding", "personal", "print3D", "electronics", "raspberrypi"],
+    docPath: "../projectDocs/EpaperDashboardDoc.jsx",
     state: "ongoing",
   },
 ];

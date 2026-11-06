@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "../styles/Home.css";
-import ProjectsDatabase from "../scripts/projectsDatabase";
+import ProjectsDatabase from "../scripts/ProjectsDatabase";
 import dice_idle from "../assets/dice_idle.png";
 import dice_hover from "../assets/dice_hover.gif";
 import dice_rolling from "../assets/dice_rolling.gif";

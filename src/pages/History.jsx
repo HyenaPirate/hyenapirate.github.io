@@ -68,7 +68,7 @@ function History() {
           title="Self-employed"
           subtitle="Bucks For Bucks Mateusz Banaszkiewicz"
           date="2024.02 - 2025.12"
-          description="Ran an online shop selling animal bones and pelts."
+          description="Ran an online shop selling animal bones and pelts. Had to retire my company due to increased taxes in the US, causing trouble with shipment, and me losing 80% of my clients."
         >
           <ul>
             <li>Customer support</li>
@@ -81,10 +81,10 @@ function History() {
 
         <HistoryEntry
           title="Internship"
-          subtitle="Helper in a Computer shop."
+          subtitle="Computer Partner Waldemar
+          Łobaczewski Bohaterów Westerplatte 11/1A/2, 65-001 Zielona Góra"
           date="2022.08 - 2022.09"
-          description="Worked at Computer Partner Waldemar
-          Łobaczewski Bohaterów Westerplatte 11/1A/2, 65-001 Zielona Góra."
+          description="Worked as a IT helper as part of my University internship. I assisted with analysis of imported inventory and shipment of complleted orders."
         >
           <ul>
             <li>Quality control of imported equipment.</li>
@@ -97,8 +97,16 @@ function History() {
         <HistoryEntry
           title="Warehouse Worker"
           subtitle="TJX Europe Distribution Center in Sulechów"
-          date="2026.02 - Present"
-        />
+          date="2026.02 - 2026.10"
+          description="Worked a physical job (contract of employement) as one of the inventory sorters and flow organizers. Quit mainly due to poor management and high stress caused by leaders' egos."
+        >
+          <ul>
+            <li>Distribution of inventory following a detailed instruction.</li>
+            <li>Keeping the workplace clean and safe throughout the shift.</li>
+            <li>Writing raports on shift performance.</li>
+            <li>Supporting the workflow of the team.</li>
+          </ul>
+        </HistoryEntry>
       </div>
     </div>
   );
